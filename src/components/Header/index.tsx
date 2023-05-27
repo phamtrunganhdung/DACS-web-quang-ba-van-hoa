@@ -3,7 +3,9 @@ import { Outlet } from "umi";
 import { history } from "umi";
 import { input } from "@/components/Input";
 import { label } from "@/components/Label";
-import logo from "@/assets/logoHeader.svg";
+import logo from "@/assets/logoHeader.png";
+import arrowDown from "@/assets/arrowDown.svg";
+import darkArrowDown from "@/assets/darkArrowDown.svg";
 import { useEffect, useState } from "react";
 
 export default function Header() {
@@ -22,7 +24,10 @@ export default function Header() {
     {
       path: "/news",
       name: "Tin Tức",
-      children: [],
+      children: [
+        { path: "/news/location", name: "Địa Điểm" },
+        { path: "/news/picAndVid", name: "Ảnh Và Video" },
+      ],
     },
     {
       path: "/exhibition",
@@ -57,15 +62,43 @@ export default function Header() {
           </div>
         </div>
         <div className="menu-head">
-          {routes.map((i: { path: string; name: string }) => (
-            <div
-              key={i.path}
-              className={`menu-item ${menuSl === i.path ? "menu-active" : ""}`}
-              onClick={() => handleClickMenuHeader(i.path)}
-            >
-              <label.md>{i.name}</label.md>
-            </div>
-          ))}
+          {routes.map((i: any) =>
+            i.children.length > 0 ? (
+              <div
+                key={i.path}
+                className={`menu-item dropdown-menu-item 
+              ${
+                i?.children?.some((x: any) => menuSl === x?.path)
+                  ? "menu-active"
+                  : ""
+              }`}
+              >
+                <label.md>{i.name}</label.md>
+                <img src={arrowDown} />
+                <div className="dropdown-menu-content">
+                  {i.children.map((j: any) => (
+                    <div
+                      key={j.path}
+                      className="dropdown-menu-child"
+                      onClick={() => handleClickMenuHeader(j.path)}
+                    >
+                      <label.md>{j.name}</label.md>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <div
+                key={i.path}
+                className={`menu-item ${
+                  menuSl === i.path ? "menu-active" : ""
+                }`}
+                onClick={() => handleClickMenuHeader(i.path)}
+              >
+                <label.md>{i.name}</label.md>
+              </div>
+            )
+          )}
         </div>
       </div>
       <div className="body">

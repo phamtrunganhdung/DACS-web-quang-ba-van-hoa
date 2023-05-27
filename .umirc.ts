@@ -2,11 +2,13 @@ import { defineConfig } from "umi";
 
 export default defineConfig({
   routes: [
-    { path: "/", component: "homepage/index" },
-    { path: "/introduce", component: "introduce/index" },
-    { path: "/news", component: "news/index" },
-    { path: "/exhibition", component: "exhibition/index" },
-    { path: "/contact", component: "contact/index" },
+    { path: "/", component: "homepage" },
+    { path: "/introduce", component: "introduce" },
+    { path: "/news", component: "news" },
+    { path: "/news/location", component: "news/location" },
+    { path: "/news/picAndVid", component: "news/picAndVid" },
+    { path: "/exhibition", component: "exhibition" },
+    { path: "/contact", component: "contact" },
   ],
   title: "Web quảng bá văn hóa",
   theme: {
