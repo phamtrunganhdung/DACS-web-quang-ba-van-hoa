@@ -1,6 +1,7 @@
 import { Link, Outlet } from "umi";
 import "./index.less";
 import "antd/dist/reset.css";
+import { useEffect } from "react";
 
 export default function Layout() {
   return (

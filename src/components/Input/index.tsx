@@ -3,31 +3,25 @@ import "./index.less";
 import React from "react";
 
 export const input = {
-  normal: ({ value, onChange, style, ...anotherProps }: any, ref: any) => {
+  normal: (
+    { value, onChange, style, className, ...anotherProps }: any,
+    ref: any
+  ) => {
     return (
-      <div className="component-input-container">
-        <Input
-          value={value}
-          onChange={onChange}
-          ref={ref}
-          style={{ ...style }}
-          {...anotherProps}
-        />
-      </div>
+      <Input
+        className={`input-component ${className}`}
+        value={value}
+        onChange={onChange}
+        ref={ref}
+        style={{ ...style }}
+        {...anotherProps}
+      />
     );
   },
   number: () => {
-    return (
-      <div className="component-input-container">
-        <InputNumber />
-      </div>
-    );
+    return <InputNumber />;
   },
   comment: () => {
-    return (
-      <div className="component-input-container">
-        <textarea></textarea>
-      </div>
-    );
+    return <textarea></textarea>;
   },
 };

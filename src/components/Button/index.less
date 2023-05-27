@@ -1,0 +1,26 @@
+@import url("@/variable.less");
+.btn-component {
+  min-width: 100px;
+  border-radius: 5px;
+  height: 40px;
+  width: auto;
+}
+.btn-primary {
+  border: none;
+  background: @themeColor;
+  color: @whiteColor;
+  &:hover {
+    background-color: @lightThemeColor;
+    color: @whiteColor;
+  }
+}
+.btn-light {
+  border: 1px solid @themeColor;
+  background-color: @whiteColor;
+  color: @themeColor;
+  &:hover {
+    border: none;
+    background: @lightThemeColor;
+    color: @whiteColor;
+  }
+}
