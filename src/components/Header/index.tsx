@@ -1,5 +1,4 @@
 import "./index.less";
-import { Outlet } from "umi";
 import { history } from "umi";
 import { input } from "@/components/Input";
 import { label } from "@/components/Label";
@@ -100,9 +99,6 @@ export default function Header() {
             )
           )}
         </div>
-      </div>
-      <div className="body">
-        <Outlet />
       </div>
     </div>
   );
