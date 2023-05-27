@@ -1,9 +1,10 @@
 import { Link, Outlet } from "umi";
-import styles from "./index.less";
+import "./index.less";
+import "antd/dist/reset.css";
 
 export default function Layout() {
   return (
-    <div className={styles.navs}>
+    <div className="layout-container">
       <ul>
         <li>
           <Link to="/">Trang chủ</Link>
