@@ -1,6 +1,6 @@
 import { Input, InputNumber } from "antd";
 import "./index.less";
-import React from "react";
+import searchIcon from "@/assets/search.svg";
 
 export const input = {
   normal: (
@@ -9,11 +9,27 @@ export const input = {
   ) => {
     return (
       <Input
-        className={`input-component ${className}`}
+        className={`input-component input-normal ${className}`}
         value={value}
         onChange={onChange}
         ref={ref}
         style={{ ...style }}
+        {...anotherProps}
+      />
+    );
+  },
+  header: (
+    { value, onChange, style, className, ...anotherProps }: any,
+    ref: any
+  ) => {
+    return (
+      <Input
+        className={`input-component input-header ${className}`}
+        value={value}
+        onChange={onChange}
+        ref={ref}
+        style={{ ...style }}
+        suffix={<img src={searchIcon} style={{ height: 25 }} />}
         {...anotherProps}
       />
     );
