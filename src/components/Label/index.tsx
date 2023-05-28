@@ -1,6 +1,6 @@
 import "./index.less";
 export const label = {
-  md: ({ style, children, className }: any) => {
+  md: ({ style, children, className = "" }: any) => {
     return (
       <span
         className={`label-component ${className}`}
@@ -44,7 +44,7 @@ export const label = {
     return (
       <span
         className={`label-component label-body-title ${className}`}
-        style={{ ...style, fontSize: 18, fontWeight: 500, color: "#0c6122" }}
+        style={{ ...style, fontSize: 15, fontWeight: 500, color: "#0c6122" }}
       >
         {children?.toUpperCase()}
       </span>

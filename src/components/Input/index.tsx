@@ -1,10 +1,10 @@
+import searchIcon from "@/assets/search.svg";
 import { Input, InputNumber } from "antd";
 import "./index.less";
-import searchIcon from "@/assets/search.svg";
 
 export const input = {
   normal: (
-    { value, onChange, style, className, ...anotherProps }: any,
+    { value, onChange, style, className = "", ...anotherProps }: any,
     ref: any
   ) => {
     return (

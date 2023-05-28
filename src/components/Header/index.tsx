@@ -1,13 +1,13 @@
-import "./index.less";
-import { history } from "umi";
+import arrowDown from "@/assets/arrowDown.svg";
+import logo from "@/assets/logoHeader.png";
 import { input } from "@/components/Input";
 import { label } from "@/components/Label";
-import logo from "@/assets/logoHeader.png";
-import arrowDown from "@/assets/arrowDown.svg";
 import { routes } from "@/routes";
 import { useEffect, useState } from "react";
+import { history } from "umi";
+import "./index.less";
 
-export default function Header() {
+export default function Header({ onChange }: any) {
   const [menuSl, setMenuSl] = useState<string>("/");
 
   const handleClickMenuHeader = (path: string) => {
@@ -19,11 +19,22 @@ export default function Header() {
     setMenuSl(history.location.pathname);
   }, [history]);
 
+  useEffect(() => {
+    onChange(menuSl);
+  }, [menuSl]);
+
   return (
     <div className="header-component-container">
       <div className="head">
         <div className="meta-head">
-          <img src={logo} style={{ height: 50 }} />
+          <img
+            src={logo}
+            style={{ height: 50 }}
+            onClick={() => {
+              history.push("/");
+              setMenuSl("/");
+            }}
+          />
           <input.header />
           <div className="log-in-log-out-side">
             <label.md className="log-in-log-out">Đăng Ký</label.md>

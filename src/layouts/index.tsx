@@ -1,19 +1,19 @@
-import "./index.less";
-import "antd/dist/reset.css";
-import { useEffect } from "react";
 import Header from "@/components/Header";
+import "antd/dist/reset.css";
+import { useState } from "react";
 import { Outlet } from "umi";
-import { history } from "umi";
+import "./index.less";
 
 export default function Layout() {
+  const [pathName, setPathName] = useState<string>("");
   return (
     <div className="layout-container">
-      <Header />
-      <div
-        className={`body ${
-          history.location.pathname === "/" ? "" : "body-padding"
-        }`}
-      >
+      <Header
+        onChange={(value: string) => {
+          setPathName(value);
+        }}
+      />
+      <div className={`body ${pathName === "/" ? "" : "body-padding"}`}>
         <Outlet />
       </div>
     </div>

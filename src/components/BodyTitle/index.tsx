@@ -1,8 +1,13 @@
-import "./index.less";
 import { label } from "@/components/Label";
 import { routes } from "@/routes";
 import { useEffect, useState } from "react";
 import { history } from "umi";
+import "./index.less";
+
+export interface IRoutes {
+  path: string;
+  name: string;
+}
 
 export default function BodyTitle() {
   const [path, setPath] = useState<string[]>([]);
@@ -11,9 +16,50 @@ export default function BodyTitle() {
     let path = "homepage" + history.location.pathname;
     setPath(path.split("/"));
   }, [history]);
+
+  const handleRenderBodyTitle = (path: string[]) => {
+    let grPath: IRoutes[] = [];
+    routes.map((i: any) => {
+      if (i.children.length > 0) {
+        i.children.map((j: any) => {
+          let childObj: IRoutes = {
+            path: j.path,
+            name: j.name,
+          };
+          grPath.push(childObj);
+        });
+      }
+      let obj: IRoutes = {
+        path: i.path,
+        name: i.name,
+      };
+      grPath.push(obj);
+    });
+
+    let nameArr = path.map((i: string) => {
+      let name: string =
+        grPath.find((x: IRoutes) => {
+          let arrPath = x.path.split("/");
+          if (i === "homepage") {
+            return x.path === "/";
+          } else {
+            return arrPath[arrPath.length - 1] === i;
+          }
+        })?.name || "";
+      return name;
+    });
+
+    return nameArr.join(" > ");
+  };
+
   return (
-    <div className="body-title-container">
-      <label.bodyTitle>{path.join(" / ")}</label.bodyTitle>
+    <div
+      className="body-title-container"
+      onClick={() => {
+        history.push("/introduce");
+      }}
+    >
+      <label.bodyTitle>{handleRenderBodyTitle(path)}</label.bodyTitle>
     </div>
   );
 }

@@ -1,10 +1,9 @@
-import "./index.less";
-import { Carousel } from "antd";
 import pic1 from "@/assets/scenePic/pic1.jpg";
 import pic2 from "@/assets/scenePic/pic2.jpg";
 import pic3 from "@/assets/scenePic/pic3.jpg";
 import pic4 from "@/assets/scenePic/pic4.jpg";
-import BodyTitle from "@/components/BodyTitle";
+import { Carousel } from "antd";
+import "./index.less";
 export default function HomePage() {
   const carouselData = [pic1, pic2, pic3, pic4];
   return (
