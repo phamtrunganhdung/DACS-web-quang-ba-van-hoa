@@ -1,0 +1,15 @@
+{
+  "powermode.enabled": true,
+  "powermode.explosions.backgroundMode": "image",
+  "powermode.shake.enabled": false,
+  "powermode.combo.location": "off",
+  "powermode.combo.counterEnabled": "hide",
+  "powermode.explosions.customExplosions": [
+    "https://media.giphy.com/media/YrYG2r8oR8FSbD926J/giphy.gif"
+  ],
+  "powermode.explosions.duration": 1000,
+  "powermode.explosions.size": 15,
+  "powermode.explosions.maxExplosions": 1,
+  "powermode.explosions.frequency": 6,
+  "powermode.explosions.offset": 0.5
+}
