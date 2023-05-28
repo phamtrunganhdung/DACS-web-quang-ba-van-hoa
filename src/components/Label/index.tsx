@@ -40,4 +40,14 @@ export const label = {
       </span>
     );
   },
+  bodyTitle: ({ style, children, className }: any) => {
+    return (
+      <span
+        className={`label-component label-body-title ${className}`}
+        style={{ ...style, fontSize: 18, fontWeight: 500, color: "#0c6122" }}
+      >
+        {children?.toUpperCase()}
+      </span>
+    );
+  },
 };

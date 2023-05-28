@@ -4,15 +4,8 @@ import pic1 from "@/assets/scenePic/pic1.jpg";
 import pic2 from "@/assets/scenePic/pic2.jpg";
 import pic3 from "@/assets/scenePic/pic3.jpg";
 import pic4 from "@/assets/scenePic/pic4.jpg";
+import BodyTitle from "@/components/BodyTitle";
 export default function HomePage() {
-  const contentStyle: React.CSSProperties = {
-    margin: 0,
-    height: "500px",
-    color: "#fff",
-    lineHeight: "160px",
-    textAlign: "center",
-    background: "#364d79",
-  };
   const carouselData = [pic1, pic2, pic3, pic4];
   return (
     <div className="homepage-container">

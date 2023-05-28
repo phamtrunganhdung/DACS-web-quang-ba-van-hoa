@@ -4,41 +4,12 @@ import { input } from "@/components/Input";
 import { label } from "@/components/Label";
 import logo from "@/assets/logoHeader.png";
 import arrowDown from "@/assets/arrowDown.svg";
-import darkArrowDown from "@/assets/darkArrowDown.svg";
+import { routes } from "@/routes";
 import { useEffect, useState } from "react";
 
 export default function Header() {
   const [menuSl, setMenuSl] = useState<string>("/");
-  const routes = [
-    {
-      path: "/",
-      name: "Trang Chủ",
-      children: [],
-    },
-    {
-      path: "/introduce",
-      name: "Giới Thiệu",
-      children: [],
-    },
-    {
-      path: "/news",
-      name: "Tin Tức",
-      children: [
-        { path: "/news/location", name: "Địa Điểm" },
-        { path: "/news/picAndVid", name: "Ảnh Và Video" },
-      ],
-    },
-    {
-      path: "/exhibition",
-      name: "Triển Lãm",
-      children: [],
-    },
-    {
-      path: "/contact",
-      name: "Liên Hệ",
-      children: [],
-    },
-  ];
+
   const handleClickMenuHeader = (path: string) => {
     history.push(path);
     setMenuSl(path);
