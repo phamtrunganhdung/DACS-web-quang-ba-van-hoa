@@ -29,7 +29,7 @@ export default function Header({ onChange }: any) {
         <div className="meta-head">
           <img
             src={logo}
-            style={{ height: 50 }}
+            style={{ height: 50, cursor: "pointer" }}
             onClick={() => {
               history.push("/");
               setMenuSl("/");

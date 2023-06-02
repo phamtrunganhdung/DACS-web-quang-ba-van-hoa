@@ -24,7 +24,7 @@ export const label = {
     return (
       <span
         className={`label-component ${className}`}
-        style={{ ...style, fontSize: 18, fontWeight: 600 }}
+        style={{ ...style, fontSize: 19, fontWeight: 600 }}
       >
         {children}
       </span>

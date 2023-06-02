@@ -12,5 +12,36 @@
   }
   .homepage-content {
     padding: 10px 250px;
+    .on-side-left,
+    .on-side-right {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      gap: 5px;
+    }
+    .on-side-right {
+      flex-direction: row-reverse;
+    }
+
+    .text {
+      padding: 20px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      p {
+        text-align: center;
+      }
+    }
+    .picture {
+      width: 50%;
+      padding: 20px;
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
   }
 }

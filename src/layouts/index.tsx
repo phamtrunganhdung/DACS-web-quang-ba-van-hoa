@@ -3,6 +3,7 @@ import "antd/dist/reset.css";
 import { useState } from "react";
 import { Outlet } from "umi";
 import "./index.less";
+import Footer from "@/components/Footer";
 
 export default function Layout() {
   const [pathName, setPathName] = useState<string>("");
@@ -16,6 +17,7 @@ export default function Layout() {
       <div className={`body ${pathName === "/" ? "" : "body-padding"}`}>
         <Outlet />
       </div>
+      <Footer />
     </div>
   );
 }

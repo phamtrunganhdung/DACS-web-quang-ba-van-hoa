@@ -53,12 +53,7 @@ export default function BodyTitle() {
   };
 
   return (
-    <div
-      className="body-title-container"
-      onClick={() => {
-        history.push("/introduce");
-      }}
-    >
+    <div className="body-title-container">
       <label.bodyTitle>{handleRenderBodyTitle(path)}</label.bodyTitle>
     </div>
   );
