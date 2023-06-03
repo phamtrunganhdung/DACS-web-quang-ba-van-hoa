@@ -65,7 +65,7 @@ export const button = {
 
 export const ButtonFloatLeft = () => {
   return (
-    <div>
+    <div className="btn-float-left-container">
       <button.flHome />
       <button.flFb />
       <button.flMail />

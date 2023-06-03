@@ -4,8 +4,13 @@ import footerImg from "@/assets/footer.png";
 import { label } from "@/components/Label";
 import { input } from "@/components/Input";
 import { button } from "@/components/Button";
+import iconF from "@/assets/icon F.svg";
+import iconI from "@/assets/icon I.svg";
+import iconP from "@/assets/icon P.svg";
+import iconT from "@/assets/icon T.svg";
 
 export default function Footer() {
+  const listSocialBtn: any = [iconF, iconI, iconP, iconT];
   return (
     <div className="footer-component-container">
       <img src={footerImg} />
@@ -36,6 +41,12 @@ export default function Footer() {
         </div>
         <div className="col-info">
           <label.xl className="title-info-footer">Kết nối</label.xl>
+
+          <div className="social-btn">
+            {listSocialBtn.map((i: any, index: number) => (
+              <img src={i} key={index}></img>
+            ))}
+          </div>
         </div>
         <div className="col-info">
           <label.xl className="title-info-footer">Thông tin</label.xl>

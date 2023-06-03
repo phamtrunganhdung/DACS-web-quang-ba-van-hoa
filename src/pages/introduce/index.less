@@ -1,2 +1,65 @@
+@import url("../../variable.less");
 .introduce-container {
+  .introduce-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .introduce-foreword {
+      line-height: 25px;
+      font-style: italic;
+    }
+    .menu-page-content {
+      height: auto;
+      min-height: 150px;
+      background: rgba(12, 97, 34, 0.12);
+      border: 3px solid @themeColor;
+      margin: 0 !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      li {
+        cursor: pointer;
+        &:hover {
+          color: @themeColor;
+          text-decoration: underline;
+        }
+      }
+    }
+    .detail-content {
+      .dt-content {
+        line-height: 25px;
+        .dt-title {
+          margin-bottom: 15px;
+        }
+        .dt-content {
+          text-align: justify;
+        }
+        img {
+          object-fit: cover;
+          height: 400px;
+          width: 100%;
+          margin: 15px 0;
+        }
+      }
+    }
+    .comment-content {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .comment-line {
+        display: flex;
+        gap: 10px;
+        img {
+          width: 60px;
+          height: 60px;
+          object-fit: contain;
+        }
+        .text-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
 }
