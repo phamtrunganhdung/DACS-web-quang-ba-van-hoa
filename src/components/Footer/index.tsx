@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="col-info col-info-1">
           <label.xl className="title-info-footer">Liên hệ</label.xl>
           <div style={{ display: "flex", gap: 3, alignItems: "start" }}>
-            <label.lg style={{ width: "30%" }}>
+            <label.lg style={{ width: 70 }}>
               <strong>Địa chỉ: </strong>
             </label.lg>
             <label.lg>1A -2B Street - 3C District, Viet Nam</label.lg>
