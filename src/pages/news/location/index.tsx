@@ -1,56 +1,116 @@
 import BodyTitle from "@/components/BodyTitle";
 import "./index.less";
 import { ButtonFloatLeft } from "@/components/Button";
+import { label } from "@/components/Label";
+import PageContent from "@/components/PageContent";
 
 export default function Location() {
+  const locationData = [
+    {
+      id: "lct1",
+      name: "Bảo tàng Lâm Đồng",
+      email: "baotangld@gmail.com",
+      openTimeAM: "7h30 - 11h-30",
+      openTimePM: "13h30 - 17h-30",
+      address: "04 Đ. Hùng Vương, Phường 10, Đà Lạt",
+      openTimeDesc: "Mở cửa tất cả các ngày trong tuần",
+      image:
+        "https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/06/bao-tang-lamdong-docdao-vntrip-1.jpg",
+    },
+    {
+      id: "lct2",
+      name: "Viện bảo tàng lịch sử cung Điện Vua I Đà Lạt",
+      email: "cungdienvua1@gmail.com",
+      openTimeAM: "7h30 - 11h-30",
+      openTimePM: "13h30 - 17h-30",
+      openTimeDesc: "Mở cửa từ thứ 2 đến thứ 6",
+      address: "Trần Quang Diệu, Phường 10, Đà Lạt",
+      image:
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/20/23/a8/getlstd-property-photo.jpg?w=1200&h=-1&s=1",
+    },
+    {
+      id: "lct3",
+      name: "XQ Đà Lạt Sử Quán",
+      email: "dlsq@gmail.com",
+      openTimeAM: "7h30 - 11h-30",
+      openTimePM: "14h30 - 18h-30",
+      openTimeDesc: "Mở cửa từ thứ 2 đến thứ 7",
+      address: "80A Đường Mai Anh Đào, Phường 8, Đà Lạt",
+      image:
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/c5/d9/16/20190813-101654-largejpg.jpg?w=1200&h=-1&s=1",
+    },
+    {
+      id: "lct4",
+      name: "Bảo tàng 3D TrickLand",
+      email: "trickland3d@gmail.com",
+      openTimeAM: "7h30 - 11h-30",
+      openTimePM: "14h30 - 18h-30",
+      openTimeDesc: "Mở cửa tất cả các ngày trong tuần",
+      address: "03 Đ. Lê Thị Hồng Gấm, Phường 1",
+      image:
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/1a/d2/98/img-20200307-194330-largejpg.jpg?w=800&h=-1&s=1",
+    },
+  ];
   return (
-    <div>
+    <div className="location-container">
       <BodyTitle />
       <ButtonFloatLeft />
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sem nisl,
-      auctor nec nisl a, egestas cursus mi. Vivamus eu dui consequat nisl tempor
-      tempus non sit amet erat. Aenean facilisis ante auctor magna fringilla,
-      vel vestibulum quam vehicula. Proin nec lacus nisl. Vivamus nunc elit,
-      egestas at ligula eget, fringilla venenatis justo. Nulla semper finibus
-      felis eget eleifend. Donec congue metus nec ex luctus aliquet. Aliquam
-      metus metus, porta et faucibus vel, suscipit in nunc. Morbi pharetra massa
-      ac elit posuere sodales. Nullam imperdiet quis neque at suscipit. Aenean
-      dapibus nisi diam, sit amet blandit velit luctus sed. Donec a ipsum non
-      sapien efficitur molestie. Sed iaculis odio sed turpis lobortis tristique.
-      Sed condimentum nisl in volutpat pellentesque. Morbi tincidunt cursus
-      lorem et elementum. Mauris a efficitur quam. Etiam consectetur porttitor
-      euismod. Pellentesque habitant morbi tristique senectus et netus et
-      malesuada fames ac turpis egestas. Maecenas eget porttitor eros. Nunc ex
-      erat, viverra a convallis quis, suscipit eget nisi. Sed rutrum, diam non
-      vehicula lacinia, ipsum erat gravida nisi, eu sollicitudin lacus mauris in
-      enim. Maecenas volutpat, nunc id feugiat dapibus, erat justo semper lorem,
-      vel interdum turpis sapien eget dolor. Praesent id lacus et ipsum dictum
-      iaculis. Phasellus non iaculis diam. Nunc dapibus ipsum et condimentum
-      congue. Morbi tincidunt sagittis libero non malesuada. Aenean eu justo
-      dolor. Vestibulum congue massa at felis feugiat aliquet. Sed sollicitudin
-      dictum risus sed cursus. Aliquam interdum lectus dolor, sed commodo lorem
-      accumsan viverra. In eu nisl eget eros euismod faucibus. Fusce at
-      consectetur mi, in eleifend elit. Vivamus a bibendum lorem. Aliquam eget
-      tellus auctor, facilisis est vel, laoreet lacus. Donec pharetra mauris
-      condimentum pellentesque facilisis. Mauris sit amet mauris eu diam
-      pulvinar pharetra. Pellentesque at pretium elit, vel semper turpis. Sed
-      feugiat nisl elit, ut sodales sapien consectetur eu. Sed maximus augue
-      sem, at lobortis tellus suscipit ut. Ut id odio quis erat maximus
-      facilisis. Vestibulum et accumsan mauris. Cras ac fermentum tortor, id
-      euismod quam. In vel dui eget elit scelerisque lobortis vitae vitae neque.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at odio
-      erat. Donec nunc nibh, tempor at arcu nec, sollicitudin porttitor turpis.
-      Sed sed arcu eget orci condimentum efficitur. Aliquam sagittis risus
-      magna, vitae finibus diam luctus et. Nulla dictum justo suscipit pharetra
-      posuere. Aliquam erat volutpat. Nunc sem lectus, luctus a quam viverra,
-      semper iaculis neque. Cras gravida eu sem sed venenatis. Phasellus
-      tristique velit sed ornare tincidunt. Sed vitae lectus congue orci
-      tincidunt volutpat non euismod leo. Aliquam vitae lobortis magna. Donec
-      vitae tincidunt enim. In enim arcu, convallis vel tortor quis, mollis
-      feugiat ante. Pellentesque pharetra, orci non sollicitudin vehicula, elit
-      ipsum lacinia ipsum, id porta erat ante in ipsum. Pellentesque habitant
-      morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut
-      dignissim nunc lectus, a feugiat elit commodo nec.
+      <PageContent
+        showDateSubmitted={false}
+        title={null}
+        dateSubmitted={null}
+        content={
+          <div className="location-content">
+            {locationData &&
+              locationData?.length > 0 &&
+              locationData.map((item: any) => {
+                return (
+                  <div className="location-box" key={item.id}>
+                    <img src={item.image} />
+                    <ul className="location-info">
+                      <li>
+                        <label.lg>
+                          <strong>{item.name}</strong>
+                        </label.lg>
+                      </li>
+                      <li>
+                        <label.lg>
+                          <strong>{item.address}</strong>
+                        </label.lg>
+                      </li>
+                      <li>
+                        <label.lg>
+                          <p style={{ color: "#3137B6", fontStyle: "italic" }}>
+                            {item.email}
+                          </p>
+                        </label.lg>
+                      </li>
+                      <li>
+                        <label.lg>
+                          <strong>{item.openTimeDesc}</strong>
+                        </label.lg>
+                      </li>
+                      <ul style={{ paddingLeft: 20 }}>
+                        <li>
+                          <label.lg>
+                            <strong>Sáng: </strong>
+                            {item.openTimeAM}
+                          </label.lg>
+                        </li>
+                        <li>
+                          <label.lg>
+                            <strong>Chiều: </strong>
+                            {item.openTimePM}
+                          </label.lg>
+                        </li>
+                      </ul>
+                    </ul>
+                  </div>
+                );
+              })}
+          </div>
+        }
+      />
     </div>
   );
 }

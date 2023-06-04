@@ -27,19 +27,28 @@ export default function Footer() {
         <button.primary title="Đăng ký" />
       </div>
       <div className="info-footer">
-        <div className="col-info">
+        <div className="col-info col-info-1">
           <label.xl className="title-info-footer">Liên hệ</label.xl>
-          <label.lg>
-            <strong>Địa chỉ: </strong> 1A -2B Street - 3C District, Viet Nam
-          </label.lg>
-          <label.lg>
-            <strong>Điện thoại: </strong>0123456789
-          </label.lg>
-          <label.lg>
-            <strong>Email: </strong>dalatkit@gmail.com
-          </label.lg>
+          <div style={{ display: "flex", gap: 3, alignItems: "start" }}>
+            <label.lg style={{ width: "30%" }}>
+              <strong>Địa chỉ: </strong>
+            </label.lg>
+            <label.lg>1A -2B Street - 3C District, Viet Nam</label.lg>
+          </div>
+          <div style={{ display: "flex", gap: 5, alignItems: "start" }}>
+            <label.lg>
+              <strong>Điện thoại: </strong>
+            </label.lg>
+            <label.lg>0123456789</label.lg>
+          </div>
+          <div style={{ display: "flex", gap: 5, alignItems: "start" }}>
+            <label.lg>
+              <strong>Email: </strong>
+            </label.lg>
+            <label.lg>dalatkit@gmail.com</label.lg>
+          </div>
         </div>
-        <div className="col-info">
+        <div className="col-info col-info-2">
           <label.xl className="title-info-footer">Kết nối</label.xl>
 
           <div className="social-btn">
@@ -48,7 +57,7 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <div className="col-info">
+        <div className="col-info col-info-3">
           <label.xl className="title-info-footer">Thông tin</label.xl>
           <label.lg>
             <strong>Tham quan</strong>

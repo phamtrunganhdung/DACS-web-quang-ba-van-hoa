@@ -256,6 +256,7 @@ export default function Introduce() {
       <BodyTitle />
       <ButtonFloatLeft />
       <PageContent
+        showDateSubmitted
         title={"Giới thiệu về  bản sắc văn hóa dân tộc Việt Nam "}
         dateSubmitted={null}
         content={
