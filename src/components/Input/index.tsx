@@ -37,7 +37,23 @@ export const input = {
   number: () => {
     return <InputNumber />;
   },
-  comment: () => {
-    return <textarea></textarea>;
+  comment: ({
+    value,
+    onChange,
+    style,
+    className,
+    rows,
+    ...anotherProps
+  }: any) => {
+    return (
+      <textarea
+        className={`input-component input-comment ${className}`}
+        value={value}
+        onChange={onChange}
+        style={{ ...style }}
+        rows={rows}
+        {...anotherProps}
+      ></textarea>
+    );
   },
 };

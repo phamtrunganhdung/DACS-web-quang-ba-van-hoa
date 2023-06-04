@@ -1,6 +1,7 @@
 import BodyTitle from "@/components/BodyTitle";
 import { ButtonFloatLeft, button } from "@/components/Button";
 import { label } from "@/components/Label";
+import { input } from "@/components/Input";
 import PageContent from "@/components/PageContent";
 import "./index.less";
 import avtDefault from "@/assets/avatarDefault.svg";
@@ -330,6 +331,17 @@ export default function Introduce() {
                         </div>
                       );
                     })}
+                  <div className="submit-comment-form">
+                    <label.lg>
+                      <strong>Viết bình luận</strong>
+                    </label.lg>
+                    <div className="form-info">
+                      <input.normal placeholder="Họ tên" />
+                      <input.normal placeholder="Email" />
+                    </div>
+                    <input.comment rows="8" />
+                    <button.primary title="Gửi bình luận" />
+                  </div>
                 </div>
               </div>
             )}
