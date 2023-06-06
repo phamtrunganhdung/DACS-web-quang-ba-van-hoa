@@ -6,6 +6,7 @@ import PageContent from "@/components/PageContent";
 import "./index.less";
 import avtDefault from "@/assets/avatarDefault.svg";
 import { useEffect, useRef } from "react";
+import CommentForm from "@/components/CommentForm";
 export default function Introduce() {
   const mainContentData: any = [
     {
@@ -221,34 +222,6 @@ export default function Introduce() {
       img: avtDefault,
       comment: "Văn hóa Việt Nam thật là đa dạng và phong phú !!!",
     },
-    {
-      key: "comment2",
-      user: "Anh Dung",
-      date: "03/06/2023",
-      img: avtDefault,
-      comment: "Văn hóa Việt Nam thật là đa dạng và phong phú !!!",
-    },
-    {
-      key: "comment3",
-      user: "Anh Dung",
-      date: "03/06/2023",
-      img: avtDefault,
-      comment: "Văn hóa Việt Nam thật là đa dạng và phong phú !!!",
-    },
-    {
-      key: "comment4",
-      user: "Anh Dung",
-      date: "03/06/2023",
-      img: avtDefault,
-      comment: "Văn hóa Việt Nam thật là đa dạng và phong phú !!!",
-    },
-    {
-      key: "comment5",
-      user: "Anh Dung",
-      date: "03/06/2023",
-      img: avtDefault,
-      comment: "Văn hóa Việt Nam thật là đa dạng và phong phú !!!",
-    },
   ];
 
   return (
@@ -308,42 +281,7 @@ export default function Introduce() {
                     </div>
                   );
                 })}
-                <div className="comment-content">
-                  <div className="total-coment">
-                    <label.lg>
-                      <strong>{`Bình luận (${
-                        commentData?.length || 0
-                      })`}</strong>
-                    </label.lg>
-                  </div>
-                  {commentData &&
-                    commentData?.length > 0 &&
-                    commentData.map((item: any) => {
-                      return (
-                        <div className="comment-line" key={item.key}>
-                          <img src={item.img} />
-                          <div className="text-info">
-                            <label.lg>
-                              <strong>{item.user}</strong>
-                            </label.lg>
-                            <label.md>{item.date}</label.md>
-                            <label.lg>{item.comment}</label.lg>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  <div className="submit-comment-form">
-                    <label.lg>
-                      <strong>Viết bình luận</strong>
-                    </label.lg>
-                    <div className="form-info">
-                      <input.normal placeholder="Họ tên" />
-                      <input.normal placeholder="Email" />
-                    </div>
-                    <input.comment rows="8" />
-                    <button.primary title="Gửi bình luận" />
-                  </div>
-                </div>
+                {commentData && <CommentForm data={commentData} />}
               </div>
             )}
           </div>
