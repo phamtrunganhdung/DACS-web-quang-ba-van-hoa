@@ -4,7 +4,7 @@ import { label } from "@/components/Label";
 import { input } from "@/components/Input";
 import PageContent from "@/components/PageContent";
 import "./index.less";
-import avtDefault from "@/assets/avatarDefault.svg";
+
 import { useEffect, useRef } from "react";
 import CommentForm from "@/components/CommentForm";
 export default function Introduce() {
@@ -214,15 +214,6 @@ export default function Introduce() {
       ),
     },
   ];
-  const commentData: any = [
-    {
-      key: "comment1",
-      user: "Anh Dung",
-      date: "03/06/2023",
-      img: avtDefault,
-      comment: "Văn hóa Việt Nam thật là đa dạng và phong phú !!!",
-    },
-  ];
 
   return (
     <div className="introduce-container">
@@ -281,7 +272,7 @@ export default function Introduce() {
                     </div>
                   );
                 })}
-                {commentData && <CommentForm data={commentData} />}
+                <CommentForm />
               </div>
             )}
           </div>

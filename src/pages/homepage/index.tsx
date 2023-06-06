@@ -8,6 +8,7 @@ import { Carousel } from "antd";
 import { label } from "@/components/Label";
 import "./index.less";
 import { button } from "@/components/Button";
+import { useEffect } from "react";
 export default function HomePage() {
   const carouselData = [pic1, pic2, pic3, pic4];
   return (

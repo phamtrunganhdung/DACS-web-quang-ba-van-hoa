@@ -9,7 +9,7 @@ export interface IRoutes {
   name: string;
 }
 
-export default function BodyTitle() {
+export default function BodyTitle({ details = "" }: any) {
   const [path, setPath] = useState<string[]>([]);
   useEffect(() => {
     if (!history.location.pathname.includes("/")) return;
@@ -54,7 +54,7 @@ export default function BodyTitle() {
 
   return (
     <div className="body-title-container">
-      <label.bodyTitle>{handleRenderBodyTitle(path)}</label.bodyTitle>
+      <label.bodyTitle>{handleRenderBodyTitle(path) + details}</label.bodyTitle>
     </div>
   );
 }

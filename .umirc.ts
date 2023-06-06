@@ -6,6 +6,10 @@ export default defineConfig({
     { path: "/introduce", component: "introduce" },
     { path: "/news", component: "news" },
     { path: "/news/location", component: "news/location" },
+    {
+      path: "/news/location/details-location",
+      component: "news/location/detailsLocation",
+    },
     { path: "/news/picAndVid", component: "news/picAndVid" },
     { path: "/exhibition", component: "exhibition" },
     { path: "/contact", component: "contact" },
