@@ -7,12 +7,14 @@ export interface IPageContent {
   showDateSubmitted: boolean;
   dateSubmitted: string | null;
   content: any;
+  rightContent: any;
 }
 export default function PageContent({
   title,
   dateSubmitted,
   content,
   showDateSubmitted,
+  rightContent,
 }: IPageContent) {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -28,6 +30,7 @@ export default function PageContent({
       <div className="content" style={{ marginTop: 10 }}>
         {content && content}
       </div>
+      <div className="right-content">{rightContent && rightContent}</div>
     </div>
   );
 }

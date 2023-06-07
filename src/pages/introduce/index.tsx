@@ -7,6 +7,7 @@ import "./index.less";
 
 import { useEffect, useRef } from "react";
 import CommentForm from "@/components/CommentForm";
+import RightBox from "@/components/RightBox/index";
 export default function Introduce() {
   const mainContentData: any = [
     {
@@ -275,6 +276,11 @@ export default function Introduce() {
                 <CommentForm />
               </div>
             )}
+          </div>
+        }
+        rightContent={
+          <div className="introduce-right-content">
+            <RightBox />
           </div>
         }
       />
