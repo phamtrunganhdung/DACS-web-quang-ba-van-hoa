@@ -8,21 +8,15 @@ import { history, useModel } from "umi";
 import "./index.less";
 
 export default function Header({ onChange }: any) {
-  const [menuSl, setMenuSl] = useState<string>("/");
-  const { path } = useModel("path");
+  const { path, updatePath } = useModel("path");
 
   const handleClickMenuHeader = (path: string) => {
-    history.push(path);
-    setMenuSl(path);
+    updatePath(path);
   };
 
   useEffect(() => {
-    setMenuSl(history.location.pathname);
-  }, [history]);
-
-  useEffect(() => {
-    onChange(menuSl);
-  }, [menuSl]);
+    onChange(path);
+  }, [path]);
 
   return (
     <div className="header-component-container">
@@ -32,8 +26,7 @@ export default function Header({ onChange }: any) {
             src={logo}
             style={{ height: 50, cursor: "pointer" }}
             onClick={() => {
-              history.push("/");
-              setMenuSl("/");
+              updatePath("/");
             }}
           />
           <input.header />
@@ -50,7 +43,7 @@ export default function Header({ onChange }: any) {
                 key={i.path}
                 className={`menu-item dropdown-menu-item 
               ${
-                i?.children?.some((x: any) => menuSl === x?.path)
+                i?.children?.some((x: any) => path === x?.path)
                   ? "menu-active"
                   : ""
               }`}
@@ -72,9 +65,7 @@ export default function Header({ onChange }: any) {
             ) : (
               <div
                 key={i.path}
-                className={`menu-item ${
-                  menuSl === i.path ? "menu-active" : ""
-                }`}
+                className={`menu-item ${path === i.path ? "menu-active" : ""}`}
                 onClick={() => handleClickMenuHeader(i.path)}
               >
                 <label.md>{i.name}</label.md>

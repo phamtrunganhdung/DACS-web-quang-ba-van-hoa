@@ -1,7 +1,7 @@
 import "./index.less";
 import { label } from "@/components/Label";
-import React from "react";
-import { history } from "umi";
+import React, { useEffect, useState } from "react";
+import { history, useModel } from "umi";
 export interface IRightBoxContent {
   key: any;
   title: string;
@@ -16,6 +16,7 @@ export interface IRightBox {
 }
 
 export default function RightBox({ header, key, data }: IRightBox) {
+  const { updatePath } = useModel("path");
   return (
     <div className="right-box-container" key={key}>
       <div className="right-box-header">
@@ -32,9 +33,7 @@ export default function RightBox({ header, key, data }: IRightBox) {
                 <img
                   src={i?.img}
                   onClick={() => {
-                    history.push(
-                      `/news/location/details-location?id=${i?.key}`
-                    );
+                    updatePath(`/news/location/details-location?id=${i?.key}`);
                   }}
                 />
                 <div className="r-info-box">

@@ -4,9 +4,10 @@ import { ButtonFloatLeft } from "@/components/Button";
 import { label } from "@/components/Label";
 import PageContent from "@/components/PageContent";
 import { locationData } from "./data";
-import { history } from "umi";
+import { useModel } from "umi";
 
 export default function Location() {
+  const { updatePath } = useModel("path");
   return (
     <div className="location-container">
       <BodyTitle />
@@ -25,7 +26,7 @@ export default function Location() {
                     className="location-box"
                     key={item.id}
                     onClick={() => {
-                      history.push(
+                      updatePath(
                         `/news/location/details-location?id=${item.id}`
                       );
                     }}

@@ -13,7 +13,7 @@ export const locationData = [
   {
     id: "lct2",
     name: "Viện bảo tàng lịch sử cung Điện Vua I Đà Lạt",
-    email: "cungdienvua1@gmail.com",
+    email: "dinh1@gmail.com",
     openTimeAM: "7h30 - 11h30",
     openTimePM: "13h30 - 17h30",
     openTimeDesc: "Mở cửa từ thứ 2 đến thứ 6",

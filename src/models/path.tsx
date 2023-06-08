@@ -11,7 +11,6 @@ export default function path() {
 
   return {
     path,
-    setPath,
     updatePath,
   };
 }
