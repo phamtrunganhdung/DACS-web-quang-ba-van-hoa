@@ -7,16 +7,12 @@ import { useEffect, useState } from "react";
 import { history, useModel } from "umi";
 import "./index.less";
 
-export default function Header({ onChange }: any) {
+export default function Header() {
   const { path, updatePath } = useModel("path");
 
   const handleClickMenuHeader = (path: string) => {
     updatePath(path);
   };
-
-  useEffect(() => {
-    onChange(path);
-  }, [path]);
 
   return (
     <div className="header-component-container">

@@ -4,17 +4,15 @@ import { useState } from "react";
 import { Outlet } from "umi";
 import "./index.less";
 import Footer from "@/components/Footer";
+import { useModel } from "umi";
 
 export default function Layout() {
-  const [pathName, setPathName] = useState<string>("");
+  const { path } = useModel("path");
+
   return (
     <div className="layout-container">
-      <Header
-        onChange={(value: string) => {
-          setPathName(value);
-        }}
-      />
-      <div className={`body ${pathName === "/" ? "" : "body-padding"}`}>
+      <Header />
+      <div className={`body ${path === "/" ? "" : "body-padding"}`}>
         <Outlet />
       </div>
       <Footer />
