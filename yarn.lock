@@ -2556,6 +2556,17 @@
     regenerate-unicode-properties "10.1.0"
     spdy "^4.0.2"
 
+"@umijs/bundler-utils@4.0.70":
+  version "4.0.70"
+  resolved "https://registry.yarnpkg.com/@umijs/bundler-utils/-/bundler-utils-4.0.70.tgz#f733b64283cde0ee61690e97ef527ea969ae7a9c"
+  integrity sha512-ZvM2Ga+BoHo8OonrmptCR1Bo/mjbtbXJVJmMQCSrb/mtn2ZFvOGddZ/0YTL+ysXnBIA7vALnlNhGWnvArCls6w==
+  dependencies:
+    "@umijs/utils" "4.0.70"
+    esbuild "0.17.19"
+    regenerate "^1.4.2"
+    regenerate-unicode-properties "10.1.0"
+    spdy "^4.0.2"
+
 "@umijs/bundler-vite@4.0.69":
   version "4.0.69"
   resolved "https://registry.yarnpkg.com/@umijs/bundler-vite/-/bundler-vite-4.0.69.tgz#aa6c3385365dc556e41c557477b12ab5fb02643d"
@@ -2719,19 +2730,20 @@
   dependencies:
     tsx "^3.12.2"
 
-"@umijs/plugins@^4.0.69":
-  version "4.0.69"
-  resolved "https://registry.yarnpkg.com/@umijs/plugins/-/plugins-4.0.69.tgz#6798f48e490920c2d97d2a129ad4f42ff783a6ec"
-  integrity sha512-tPDO816TFrE+UJ1293n+TytSGw53VexP6pZREPTwKZNdHgAgV/WdnKV0rsWsyUouiDXXbFCPwnoc1HNK+ve34w==
+"@umijs/plugins@^4.0.70":
+  version "4.0.70"
+  resolved "https://registry.yarnpkg.com/@umijs/plugins/-/plugins-4.0.70.tgz#d6ebf3d1641be15109bb194315293cd3cf341bc6"
+  integrity sha512-3Hu79VZJpwcn9HFZWH/katqrk6YryMpfMYJOdgzbdyAW4mipPt9Oa9x+ZYVWgr754kqY2X4IFqLhb3Y6+rO0Jg==
   dependencies:
     "@ahooksjs/use-request" "^2.0.0"
     "@ant-design/antd-theme-variable" "^1.0.0"
+    "@ant-design/cssinjs" "^1.9.1"
     "@ant-design/icons" "^4.7.0"
     "@ant-design/moment-webpack-plugin" "^0.0.3"
     "@ant-design/pro-components" "^2.0.1"
     "@tanstack/react-query" "^4.24.10"
     "@tanstack/react-query-devtools" "^4.24.10"
-    "@umijs/bundler-utils" "4.0.69"
+    "@umijs/bundler-utils" "4.0.70"
     "@umijs/valtio" "1.0.3"
     antd-dayjs-webpack-plugin "^1.0.6"
     axios "^0.27.2"
@@ -2846,6 +2858,14 @@
   version "4.0.69"
   resolved "https://registry.yarnpkg.com/@umijs/utils/-/utils-4.0.69.tgz#8d2df2ddd1abcc0040bf3511c74852cb2b425f61"
   integrity sha512-lLUsceXtNWBFb+A6/Sw/BRBrBCJMGCurkkuwFsPjVxuiHtJrI3X7RBUMH0uFilhG78dhQdHGN2tc+NH7Z1YXKw==
+  dependencies:
+    chokidar "3.5.3"
+    pino "7.11.0"
+
+"@umijs/utils@4.0.70":
+  version "4.0.70"
+  resolved "https://registry.yarnpkg.com/@umijs/utils/-/utils-4.0.70.tgz#e758b03d49e0c85ac65b9c4ef8deedf133c68d09"
+  integrity sha512-ZfDrtE7GtfYsdd5QwJiZHLMql8ZbyzUw37S7eCgIl5RTOxec1Ojqbzpfis7j8nyWyMGd/PpsuUl5909gA0U9bg==
   dependencies:
     chokidar "3.5.3"
     pino "7.11.0"
@@ -4275,7 +4295,7 @@ esbuild@0.16.17:
     "@esbuild/win32-ia32" "0.16.17"
     "@esbuild/win32-x64" "0.16.17"
 
-esbuild@^0.17.5, esbuild@~0.17.6:
+esbuild@0.17.19, esbuild@^0.17.5, esbuild@~0.17.6:
   version "0.17.19"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.17.19.tgz#087a727e98299f0462a3d0bcdd9cd7ff100bd955"
   integrity sha512-XQ0jAPFkK/u3LcVRcvVHQcTIqD6E2H1fvZMA5dQPSOWb3suUbWbfbRf94pjc0bNzRYLfIrDRQXr7X+LHIm5oHw==

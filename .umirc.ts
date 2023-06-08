@@ -1,6 +1,4 @@
-import { defineConfig } from "umi";
-
-export default defineConfig({
+export default {
   routes: [
     { path: "/", component: "homepage" },
     { path: "/introduce", component: "introduce" },
@@ -19,4 +17,6 @@ export default defineConfig({
     "@primary-color": "#0c6122",
   },
   npmClient: "yarn",
-});
+  plugins: ["@umijs/plugins/dist/model"],
+  model: {},
+};

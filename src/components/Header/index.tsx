@@ -4,11 +4,12 @@ import { input } from "@/components/Input";
 import { label } from "@/components/Label";
 import { routes } from "@/routes";
 import { useEffect, useState } from "react";
-import { history } from "umi";
+import { history, useModel } from "umi";
 import "./index.less";
 
 export default function Header({ onChange }: any) {
   const [menuSl, setMenuSl] = useState<string>("/");
+  const { path } = useModel("path");
 
   const handleClickMenuHeader = (path: string) => {
     history.push(path);
