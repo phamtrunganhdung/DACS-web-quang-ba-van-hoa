@@ -3,7 +3,7 @@ import { label } from "@/components/Label";
 import React, { useEffect, useState } from "react";
 import { history, useModel } from "umi";
 export interface IRightBoxContent {
-  key: any;
+  key: string | number;
   title: string;
   date: string | null;
   content: any;
@@ -11,14 +11,14 @@ export interface IRightBoxContent {
 }
 export interface IRightBox {
   header: string;
-  key: any;
-  data: IRightBoxContent;
+  id: string | number;
+  data: IRightBoxContent[];
 }
 
-export default function RightBox({ header, key, data }: IRightBox) {
+export default function RightBox({ header, id, data }: IRightBox) {
   const { updatePath } = useModel("path");
   return (
-    <div className="right-box-container" key={key}>
+    <div className="right-box-container" key={id}>
       <div className="right-box-header">
         <div className="right-box-title">
           <label.xl>{header || ""}</label.xl>
@@ -26,10 +26,10 @@ export default function RightBox({ header, key, data }: IRightBox) {
       </div>
       <div className="right-box-content">
         {data &&
-          data?.length > 0 &&
-          data.map((i: IRightBoxContent) => {
+          data.length > 0 &&
+          data.map((i: IRightBoxContent, index: number) => {
             return (
-              <div className="r-child-box" key={i?.key}>
+              <div className="r-child-box" key={index}>
                 <img
                   src={i?.img}
                   onClick={() => {

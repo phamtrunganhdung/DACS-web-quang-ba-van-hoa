@@ -1,4 +1,53 @@
+import { IRightBoxContent } from "@/components/RightBox";
+import moment from "moment";
+
 export const locationData = [
+  {
+    id: "lct1",
+    name: "Bảo tàng Lâm Đồng",
+    email: "baotangld@gmail.com",
+    openTimeAM: "7h30 - 11h30",
+    openTimePM: "13h30 - 17h30",
+    address: "04 Đ. Hùng Vương, Phường 10, Đà Lạt",
+    openTimeDesc: "Mở cửa tất cả các ngày trong tuần",
+    image:
+      "https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/06/bao-tang-lamdong-docdao-vntrip-1.jpg",
+  },
+  {
+    id: "lct2",
+    name: "Viện bảo tàng lịch sử cung Điện Vua I Đà Lạt",
+    email: "dinh1@gmail.com",
+    openTimeAM: "7h30 - 11h30",
+    openTimePM: "13h30 - 17h30",
+    openTimeDesc: "Mở cửa từ thứ 2 đến thứ 6",
+    address: "Trần Quang Diệu, Phường 10, Đà Lạt",
+    image:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/20/23/a8/getlstd-property-photo.jpg?w=1200&h=-1&s=1",
+  },
+  {
+    id: "lct3",
+    name: "XQ Đà Lạt Sử Quán",
+    email: "dlsq@gmail.com",
+    openTimeAM: "7h00 - 11h30",
+    openTimePM: "14h30 - 17h00",
+    openTimeDesc: "Mở cửa từ thứ 2 đến thứ 7",
+    address: "80A Đường Mai Anh Đào, Phường 8, Đà Lạt",
+    image:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/c5/d9/16/20190813-101654-largejpg.jpg?w=1200&h=-1&s=1",
+  },
+  {
+    id: "lct4",
+    name: "Bảo tàng 3D TrickLand",
+    email: "trickland3d@gmail.com",
+    openTimeAM: "7h30 - 11h30",
+    openTimePM: "14h30 - 18h30",
+    openTimeDesc: "Mở cửa tất cả các ngày trong tuần",
+    address: "03 Đ. Lê Thị Hồng Gấm, Phường 1",
+    image:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/1a/d2/98/img-20200307-194330-largejpg.jpg?w=800&h=-1&s=1",
+  },
+];
+export const artifactsData = [
   {
     id: "lct1",
     name: "Bảo tàng Lâm Đồng",
@@ -302,6 +351,54 @@ export const detailsData = [
           hiến vào nghệ thuật của anh.
         </p>
       </>
+    ),
+  },
+];
+export const rightBoxData: IRightBoxContent[] = [
+  {
+    key: "lct1",
+    date: moment().format("DD/MM/YYYY"),
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Lam_Dong_Museum_01.JPG/1280px-Lam_Dong_Museum_01.JPG",
+    title: "Bảo tàng Lâm Đồng",
+    content: (
+      <div>
+        Bảo tàng Lâm Đồng là nơi trưng bày các hiện vật truyền thống và lịch sử
+        của địa phương, đặc biệt là những hiện vật thể hiện truyền thống văn hóa
+        của vùng đất Lâm Đồng, là bảo tàng tổng hợp (khảo cứu địa phương), hiện
+        đang lưu giữ trên 15.000 hiện vật với nhiều sưu tập hiện vật độc đáo và
+        quý hiếm.
+      </div>
+    ),
+  },
+  {
+    key: "lct2",
+    date: moment().format("DD/MM/YYYY"),
+    img: "https://du-lich-da-lat.com/wp-content/uploads/2019/09/dinh-1-da-lat.jpg",
+    title: "Dinh Bảo Đại I",
+    content: (
+      <div>
+        Dinh 1 Đà Lạt hay còn được du khách biết đến với tên gọi là Dinh Bảo Đại
+        1. Đà Lạt là một thành phố có khí hậu quanh năm mát mẻ, dễ chịu. Nơi đây
+        không khác gì một thiêng đường trong mơ mà ai ai cũng ao ước được sống ở
+        đây. Chính vì thế mà vua Bảo Đại đã chọn xây dựng nên 3 dinh thự xa hoa
+        tráng lệ tại mảnh đất Tây Nguyên Lâm Viên này.
+      </div>
+    ),
+  },
+  {
+    key: "lct3",
+    date: moment().format("DD/MM/YYYY"),
+    img: "https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/12/da-lat-xq-su-quan.jpg",
+    title: "XQ Đà Lạt Sử Quán",
+    content: (
+      <div>
+        XQ sử quán là địa điểm du lịch Đà Lạt nổi tiếng nằm đối diện với khu du
+        lịch đồi Mộng Mơ. Điểm du lịch này đã để lại nhiều ấn tượng cho khách
+        tham quan. XQ sử quán mang lối kiến trúc đậm dấu ấn của cố đô Huế cổ
+        kính. Và chứa đựng bên trong là những tác phẩm tranh thêu tuyệt mỹ. Đây
+        là một không gian nghệ thuật để bạn đến. Và tìm hiểu những nét văn hóa
+        của nghề thêu truyền thống.
+      </div>
     ),
   },
 ];

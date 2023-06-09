@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import "./index.less";
 import { label } from "@/components/Label";
 import moment from "moment";
@@ -19,8 +19,9 @@ export default function PageContent({
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
-    <div className="cpn-page-content-container">
+    <div className={`cpn-page-content-container`}>
       <label.xl className="title-pct">{title || ""}</label.xl>
       {showDateSubmitted && (
         <label.md className="date-submitted-pct">

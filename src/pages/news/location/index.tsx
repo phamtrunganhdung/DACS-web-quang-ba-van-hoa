@@ -5,6 +5,8 @@ import { label } from "@/components/Label";
 import PageContent from "@/components/PageContent";
 import { locationData } from "./data";
 import { useModel } from "umi";
+import infoIcon from "@/assets/info.svg";
+import artifactIcon from "@/assets/artifacts.svg";
 
 export default function Location() {
   const { updatePath } = useModel("path");
@@ -13,6 +15,7 @@ export default function Location() {
       <BodyTitle />
       <ButtonFloatLeft />
       <PageContent
+        rightContent={null}
         showDateSubmitted={false}
         title={null}
         dateSubmitted={null}
@@ -22,15 +25,29 @@ export default function Location() {
               locationData?.length > 0 &&
               locationData.map((item: any) => {
                 return (
-                  <div
-                    className="location-box"
-                    key={item.id}
-                    onClick={() => {
-                      updatePath(
-                        `/news/location/details-location?id=${item.id}`
-                      );
-                    }}
-                  >
+                  <div className="location-box" key={item.id}>
+                    <div className="hover-location-info">
+                      <div
+                        className="detail-location-redirect"
+                        onClick={() => {
+                          updatePath(
+                            `/news/location/details-location?id=${item.id}`
+                          );
+                        }}
+                      >
+                        <label.xl>Giới Thiệu</label.xl>
+                        <img src={infoIcon} />
+                      </div>
+                      <div
+                        className="artifacts-redirect"
+                        onClick={() => {
+                          updatePath(`/news/location/artifacts?id=${item.id}`);
+                        }}
+                      >
+                        <label.xl>Hiện vật</label.xl>
+                        <img src={artifactIcon} />
+                      </div>
+                    </div>
                     <img src={item.image} />
                     <ul className="location-info">
                       <li>

@@ -8,7 +8,8 @@ import "./index.less";
 import { useEffect, useRef } from "react";
 import CommentForm from "@/components/CommentForm";
 import moment from "moment";
-import RightBox, { IRightBoxContent } from "@/components/RightBox/index";
+import RightBox from "@/components/RightBox/index";
+import { rightBoxData } from "../news/location/data";
 export default function Introduce() {
   const mainContentData: any = [
     {
@@ -216,54 +217,6 @@ export default function Introduce() {
       ),
     },
   ];
-  const rightBoxData: IRightBoxContent = [
-    {
-      key: "lct1",
-      date: moment().format("DD/MM/YYYY"),
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Lam_Dong_Museum_01.JPG/1280px-Lam_Dong_Museum_01.JPG",
-      title: "Bảo tàng Lâm Đồng",
-      content: (
-        <div>
-          Bảo tàng Lâm Đồng là nơi trưng bày các hiện vật truyền thống và lịch
-          sử của địa phương, đặc biệt là những hiện vật thể hiện truyền thống
-          văn hóa của vùng đất Lâm Đồng, là bảo tàng tổng hợp (khảo cứu địa
-          phương), hiện đang lưu giữ trên 15.000 hiện vật với nhiều sưu tập hiện
-          vật độc đáo và quý hiếm.
-        </div>
-      ),
-    },
-    {
-      key: "lct2",
-      date: moment().format("DD/MM/YYYY"),
-      img: "https://du-lich-da-lat.com/wp-content/uploads/2019/09/dinh-1-da-lat.jpg",
-      title: "Dinh Bảo Đại I",
-      content: (
-        <div>
-          Dinh 1 Đà Lạt hay còn được du khách biết đến với tên gọi là Dinh Bảo
-          Đại 1. Đà Lạt là một thành phố có khí hậu quanh năm mát mẻ, dễ chịu.
-          Nơi đây không khác gì một thiêng đường trong mơ mà ai ai cũng ao ước
-          được sống ở đây. Chính vì thế mà vua Bảo Đại đã chọn xây dựng nên 3
-          dinh thự xa hoa tráng lệ tại mảnh đất Tây Nguyên Lâm Viên này.
-        </div>
-      ),
-    },
-    {
-      key: "lct3",
-      date: moment().format("DD/MM/YYYY"),
-      img: "https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/12/da-lat-xq-su-quan.jpg",
-      title: "XQ Đà Lạt Sử Quán",
-      content: (
-        <div>
-          XQ sử quán là địa điểm du lịch Đà Lạt nổi tiếng nằm đối diện với khu
-          du lịch đồi Mộng Mơ. Điểm du lịch này đã để lại nhiều ấn tượng cho
-          khách tham quan. XQ sử quán mang lối kiến trúc đậm dấu ấn của cố đô
-          Huế cổ kính. Và chứa đựng bên trong là những tác phẩm tranh thêu tuyệt
-          mỹ. Đây là một không gian nghệ thuật để bạn đến. Và tìm hiểu những nét
-          văn hóa của nghề thêu truyền thống.
-        </div>
-      ),
-    },
-  ];
 
   return (
     <div className="introduce-container">
@@ -329,11 +282,7 @@ export default function Introduce() {
         }
         rightContent={
           <div className="introduce-right-content">
-            <RightBox
-              header="Địa điểm"
-              key="lct"
-              data={rightBoxData}
-            ></RightBox>
+            <RightBox header="Địa điểm" id="lct" data={rightBoxData}></RightBox>
           </div>
         }
       />

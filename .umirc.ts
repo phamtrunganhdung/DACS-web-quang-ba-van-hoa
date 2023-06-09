@@ -8,6 +8,10 @@ export default {
       path: "/news/location/details-location",
       component: "news/location/detailsLocation",
     },
+    {
+      path: "/news/location/artifacts",
+      component: "news/location/artifacts",
+    },
     { path: "/news/picAndVid", component: "news/picAndVid" },
     { path: "/exhibition", component: "exhibition" },
     { path: "/contact", component: "contact" },
