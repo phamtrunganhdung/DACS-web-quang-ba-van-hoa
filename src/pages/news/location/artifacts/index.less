@@ -1,3 +1,24 @@
 .artifacts-container {
   min-height: calc(100vh - 125px);
+  .grid-artifacts {
+    .artifacts-box {
+      display: flex;
+      gap: 5px;
+      img {
+        cursor: pointer;
+        width: 150px;
+        height: 150px;
+        object-fit: fill;
+      }
+      .artifacts-box-info {
+        cursor: pointer;
+        .artifacts-box-info-content {
+          display: -webkit-box;
+          -webkit-line-clamp: 8;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 import { IRightBoxContent } from "@/components/RightBox";
 import moment from "moment";
 
-export const locationData = [
+export const locationData: any = [
   {
     id: "lct1",
     name: "Bảo tàng Lâm Đồng",
@@ -47,53 +47,168 @@ export const locationData = [
       "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/1a/d2/98/img-20200307-194330-largejpg.jpg?w=800&h=-1&s=1",
   },
 ];
-export const artifactsData = [
+export const artifactsData: any = [
   {
     id: "lct1",
     name: "Bảo tàng Lâm Đồng",
-    email: "baotangld@gmail.com",
-    openTimeAM: "7h30 - 11h30",
-    openTimePM: "13h30 - 17h30",
-    address: "04 Đ. Hùng Vương, Phường 10, Đà Lạt",
-    openTimeDesc: "Mở cửa tất cả các ngày trong tuần",
-    image:
-      "https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/06/bao-tang-lamdong-docdao-vntrip-1.jpg",
+    lstArtifacts: [
+      {
+        id: "atf1",
+        name: "Bộ sưu tập đàn đá",
+        img: "https://www.baotanglamdong.com.vn/cache/c/3c88df7208cfc56b2ee91cfffed33979.JPG",
+        content: (
+          <>
+            <p>
+              Ngay sau khi đất nước độc lập, thống nhất, công tác bảo tồn, bảo
+              tàng ở Lâm Đồng đã được lãnh đạo tỉnh quan tâm. Tháng 8 năm 1975,
+              bộ phận Bảo tồn - Bảo tàng được thành lập, trực thuộc Thành ủy Đà
+              Lạt, với nhiệm vụ sưu tầm, gìn giữ và bảo quản những hiện vật, tư
+              liệu có giá trị lịch sử, văn hóa của tỉnh. Trải qua 46 năm hình
+              thành và phát triển, Bảo tàng Lâm Đồng luôn hoàn thành tốt nhiệm
+              vụ chính trị và nhiều lần được nhận bằng khen của Bộ Văn hóa -
+              Thông tin (nay là Bộ Văn hóa - Thể thao và Du lịch), của Ủy ban
+              nhân dân tỉnh Lâm Đồng.
+            </p>
+          </>
+        ),
+      },
+      {
+        id: "atf1",
+        name: "Bộ sưu tập đàn đá",
+        img: "https://www.baotanglamdong.com.vn/cache/c/3c88df7208cfc56b2ee91cfffed33979.JPG",
+        content: (
+          <>
+            <p>
+              Ngay sau khi đất nước độc lập, thống nhất, công tác bảo tồn, bảo
+              tàng ở Lâm Đồng đã được lãnh đạo tỉnh quan tâm. Tháng 8 năm 1975,
+              bộ phận Bảo tồn - Bảo tàng được thành lập, trực thuộc Thành ủy Đà
+              Lạt, với nhiệm vụ sưu tầm, gìn giữ và bảo quản những hiện vật, tư
+              liệu có giá trị lịch sử, văn hóa của tỉnh. Trải qua 46 năm hình
+              thành và phát triển, Bảo tàng Lâm Đồng luôn hoàn thành tốt nhiệm
+              vụ chính trị và nhiều lần được nhận bằng khen của Bộ Văn hóa -
+              Thông tin (nay là Bộ Văn hóa - Thể thao và Du lịch), của Ủy ban
+              nhân dân tỉnh Lâm Đồng.
+            </p>
+          </>
+        ),
+      },
+      {
+        id: "atf1",
+        name: "Bộ sưu tập đàn đá",
+        img: "https://www.baotanglamdong.com.vn/cache/c/3c88df7208cfc56b2ee91cfffed33979.JPG",
+        content: (
+          <>
+            <p>
+              Ngay sau khi đất nước độc lập, thống nhất, công tác bảo tồn, bảo
+              tàng ở Lâm Đồng đã được lãnh đạo tỉnh quan tâm. Tháng 8 năm 1975,
+              bộ phận Bảo tồn - Bảo tàng được thành lập, trực thuộc Thành ủy Đà
+              Lạt, với nhiệm vụ sưu tầm, gìn giữ và bảo quản những hiện vật, tư
+              liệu có giá trị lịch sử, văn hóa của tỉnh. Trải qua 46 năm hình
+              thành và phát triển, Bảo tàng Lâm Đồng luôn hoàn thành tốt nhiệm
+              vụ chính trị và nhiều lần được nhận bằng khen của Bộ Văn hóa -
+              Thông tin (nay là Bộ Văn hóa - Thể thao và Du lịch), của Ủy ban
+              nhân dân tỉnh Lâm Đồng.
+            </p>
+          </>
+        ),
+      },
+      {
+        id: "atf1",
+        name: "Bộ sưu tập đàn đá",
+        img: "https://www.baotanglamdong.com.vn/cache/c/3c88df7208cfc56b2ee91cfffed33979.JPG",
+        content: (
+          <>
+            <p>
+              Ngay sau khi đất nước độc lập, thống nhất, công tác bảo tồn, bảo
+              tàng ở Lâm Đồng đã được lãnh đạo tỉnh quan tâm. Tháng 8 năm 1975,
+              bộ phận Bảo tồn - Bảo tàng được thành lập, trực thuộc Thành ủy Đà
+              Lạt, với nhiệm vụ sưu tầm, gìn giữ và bảo quản những hiện vật, tư
+              liệu có giá trị lịch sử, văn hóa của tỉnh. Trải qua 46 năm hình
+              thành và phát triển, Bảo tàng Lâm Đồng luôn hoàn thành tốt nhiệm
+              vụ chính trị và nhiều lần được nhận bằng khen của Bộ Văn hóa -
+              Thông tin (nay là Bộ Văn hóa - Thể thao và Du lịch), của Ủy ban
+              nhân dân tỉnh Lâm Đồng.
+            </p>
+          </>
+        ),
+      },
+      {
+        id: "atf1",
+        name: "Bộ sưu tập đàn đá",
+        img: "https://www.baotanglamdong.com.vn/cache/c/3c88df7208cfc56b2ee91cfffed33979.JPG",
+        content: (
+          <>
+            <p>
+              Ngay sau khi đất nước độc lập, thống nhất, công tác bảo tồn, bảo
+              tàng ở Lâm Đồng đã được lãnh đạo tỉnh quan tâm. Tháng 8 năm 1975,
+              bộ phận Bảo tồn - Bảo tàng được thành lập, trực thuộc Thành ủy Đà
+              Lạt, với nhiệm vụ sưu tầm, gìn giữ và bảo quản những hiện vật, tư
+              liệu có giá trị lịch sử, văn hóa của tỉnh. Trải qua 46 năm hình
+              thành và phát triển, Bảo tàng Lâm Đồng luôn hoàn thành tốt nhiệm
+              vụ chính trị và nhiều lần được nhận bằng khen của Bộ Văn hóa -
+              Thông tin (nay là Bộ Văn hóa - Thể thao và Du lịch), của Ủy ban
+              nhân dân tỉnh Lâm Đồng.
+            </p>
+          </>
+        ),
+      },
+      {
+        id: "atf1",
+        name: "Bộ sưu tập đàn đá",
+        img: "https://www.baotanglamdong.com.vn/cache/c/3c88df7208cfc56b2ee91cfffed33979.JPG",
+        content: (
+          <>
+            <p>
+              Ngay sau khi đất nước độc lập, thống nhất, công tác bảo tồn, bảo
+              tàng ở Lâm Đồng đã được lãnh đạo tỉnh quan tâm. Tháng 8 năm 1975,
+              bộ phận Bảo tồn - Bảo tàng được thành lập, trực thuộc Thành ủy Đà
+              Lạt, với nhiệm vụ sưu tầm, gìn giữ và bảo quản những hiện vật, tư
+              liệu có giá trị lịch sử, văn hóa của tỉnh. Trải qua 46 năm hình
+              thành và phát triển, Bảo tàng Lâm Đồng luôn hoàn thành tốt nhiệm
+              vụ chính trị và nhiều lần được nhận bằng khen của Bộ Văn hóa -
+              Thông tin (nay là Bộ Văn hóa - Thể thao và Du lịch), của Ủy ban
+              nhân dân tỉnh Lâm Đồng.
+            </p>
+          </>
+        ),
+      },
+      {
+        id: "atf1",
+        name: "Bộ sưu tập đàn đá",
+        img: "https://www.baotanglamdong.com.vn/cache/c/3c88df7208cfc56b2ee91cfffed33979.JPG",
+        content: (
+          <>
+            <p>
+              Ngay sau khi đất nước độc lập, thống nhất, công tác bảo tồn, bảo
+              tàng ở Lâm Đồng đã được lãnh đạo tỉnh quan tâm. Tháng 8 năm 1975,
+              bộ phận Bảo tồn - Bảo tàng được thành lập, trực thuộc Thành ủy Đà
+              Lạt, với nhiệm vụ sưu tầm, gìn giữ và bảo quản những hiện vật, tư
+              liệu có giá trị lịch sử, văn hóa của tỉnh. Trải qua 46 năm hình
+              thành và phát triển, Bảo tàng Lâm Đồng luôn hoàn thành tốt nhiệm
+              vụ chính trị và nhiều lần được nhận bằng khen của Bộ Văn hóa -
+              Thông tin (nay là Bộ Văn hóa - Thể thao và Du lịch), của Ủy ban
+              nhân dân tỉnh Lâm Đồng.
+            </p>
+          </>
+        ),
+      },
+    ],
   },
   {
     id: "lct2",
     name: "Viện bảo tàng lịch sử cung Điện Vua I Đà Lạt",
-    email: "dinh1@gmail.com",
-    openTimeAM: "7h30 - 11h30",
-    openTimePM: "13h30 - 17h30",
-    openTimeDesc: "Mở cửa từ thứ 2 đến thứ 6",
-    address: "Trần Quang Diệu, Phường 10, Đà Lạt",
-    image:
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/20/23/a8/getlstd-property-photo.jpg?w=1200&h=-1&s=1",
   },
   {
     id: "lct3",
     name: "XQ Đà Lạt Sử Quán",
-    email: "dlsq@gmail.com",
-    openTimeAM: "7h00 - 11h30",
-    openTimePM: "14h30 - 17h00",
-    openTimeDesc: "Mở cửa từ thứ 2 đến thứ 7",
-    address: "80A Đường Mai Anh Đào, Phường 8, Đà Lạt",
-    image:
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/c5/d9/16/20190813-101654-largejpg.jpg?w=1200&h=-1&s=1",
   },
   {
     id: "lct4",
     name: "Bảo tàng 3D TrickLand",
-    email: "trickland3d@gmail.com",
-    openTimeAM: "7h30 - 11h30",
-    openTimePM: "14h30 - 18h30",
-    openTimeDesc: "Mở cửa tất cả các ngày trong tuần",
-    address: "03 Đ. Lê Thị Hồng Gấm, Phường 1",
-    image:
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/1a/d2/98/img-20200307-194330-largejpg.jpg?w=800&h=-1&s=1",
   },
 ];
-export const detailsData = [
+
+export const detailsData: any = [
   {
     id: "lct1",
     content: (
