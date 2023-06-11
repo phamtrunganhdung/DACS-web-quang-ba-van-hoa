@@ -12,6 +12,10 @@ export default {
       path: "/news/location/artifacts",
       component: "news/location/artifacts",
     },
+    {
+      path: "/news/location/artifacts/details-artifacts",
+      component: "news/location/artifacts/detailsArtifacts",
+    },
     { path: "/news/picAndVid", component: "news/picAndVid" },
     { path: "/exhibition", component: "exhibition" },
     { path: "/contact", component: "contact" },

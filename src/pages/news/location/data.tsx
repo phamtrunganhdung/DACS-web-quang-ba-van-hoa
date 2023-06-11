@@ -73,121 +73,67 @@ export const artifactsData: any = [
         ),
       },
       {
-        id: "atf1",
-        name: "Bộ sưu tập đàn đá",
-        img: "https://www.baotanglamdong.com.vn/cache/c/3c88df7208cfc56b2ee91cfffed33979.JPG",
+        id: "atf2",
+        name: "Thiên nhiên Lâm Đồng",
+        img: "https://www.baotanglamdong.com.vn/images/phocagallery/thiennhien_6.jpg",
         content: (
           <>
             <p>
-              Ngay sau khi đất nước độc lập, thống nhất, công tác bảo tồn, bảo
-              tàng ở Lâm Đồng đã được lãnh đạo tỉnh quan tâm. Tháng 8 năm 1975,
-              bộ phận Bảo tồn - Bảo tàng được thành lập, trực thuộc Thành ủy Đà
-              Lạt, với nhiệm vụ sưu tầm, gìn giữ và bảo quản những hiện vật, tư
-              liệu có giá trị lịch sử, văn hóa của tỉnh. Trải qua 46 năm hình
-              thành và phát triển, Bảo tàng Lâm Đồng luôn hoàn thành tốt nhiệm
-              vụ chính trị và nhiều lần được nhận bằng khen của Bộ Văn hóa -
-              Thông tin (nay là Bộ Văn hóa - Thể thao và Du lịch), của Ủy ban
-              nhân dân tỉnh Lâm Đồng.
+              Lâm Đồng là tỉnh miền núi nam Tây Nguyên với diện tích 9.764,79
+              km2, trong đó diện tích rừng chiếm 618.815 ha, với mật độ che phủ
+              63% diện tích toàn tỉnh. Hiện nay, Lâm Đồng có hai khu rừng quốc
+              gia: vườn quốc gia Bidup Núi Bà và một phần vườn quốc gia Cát
+              Tiên.
             </p>
           </>
         ),
       },
       {
-        id: "atf1",
-        name: "Bộ sưu tập đàn đá",
-        img: "https://www.baotanglamdong.com.vn/cache/c/3c88df7208cfc56b2ee91cfffed33979.JPG",
+        id: "atf3",
+        name: "Văn hóa các dân tộc Mạ, Cơho, Churu",
+        img: "https://www.baotanglamdong.com.vn/images/hinhanhbaiviet/dantoc2.jpg",
         content: (
           <>
             <p>
-              Ngay sau khi đất nước độc lập, thống nhất, công tác bảo tồn, bảo
-              tàng ở Lâm Đồng đã được lãnh đạo tỉnh quan tâm. Tháng 8 năm 1975,
-              bộ phận Bảo tồn - Bảo tàng được thành lập, trực thuộc Thành ủy Đà
-              Lạt, với nhiệm vụ sưu tầm, gìn giữ và bảo quản những hiện vật, tư
-              liệu có giá trị lịch sử, văn hóa của tỉnh. Trải qua 46 năm hình
-              thành và phát triển, Bảo tàng Lâm Đồng luôn hoàn thành tốt nhiệm
-              vụ chính trị và nhiều lần được nhận bằng khen của Bộ Văn hóa -
-              Thông tin (nay là Bộ Văn hóa - Thể thao và Du lịch), của Ủy ban
-              nhân dân tỉnh Lâm Đồng.
+              Lâm đồng là tỉnh có nhiều thành phần dân tộc. Theo thống kê gần
+              đây, Lâm Đồng có tới 42 dân tộc. Trong đó người Mạ, Cơho và Churu
+              là ba dân tộc sinh sống lâu đời trên mảnh đất này. Vì vậy, việc
+              giới thiệu đặc trưng văn hóa các dân tộc bản địa: Mạ, Cơho và
+              Churu là một trong những nội dung trưng bày chính của Bảo Tàng Lâm
+              Đồng.
             </p>
           </>
         ),
       },
       {
-        id: "atf1",
-        name: "Bộ sưu tập đàn đá",
-        img: "https://www.baotanglamdong.com.vn/cache/c/3c88df7208cfc56b2ee91cfffed33979.JPG",
+        id: "atf4",
+        name: "Phong trào đấu tranh cách mạng tỉnh Lâm Đồng",
+        img: "https://www.baotanglamdong.com.vn/images/hinhanhbaiviet/1-KhangChien.jpg",
         content: (
           <>
             <p>
-              Ngay sau khi đất nước độc lập, thống nhất, công tác bảo tồn, bảo
-              tàng ở Lâm Đồng đã được lãnh đạo tỉnh quan tâm. Tháng 8 năm 1975,
-              bộ phận Bảo tồn - Bảo tàng được thành lập, trực thuộc Thành ủy Đà
-              Lạt, với nhiệm vụ sưu tầm, gìn giữ và bảo quản những hiện vật, tư
-              liệu có giá trị lịch sử, văn hóa của tỉnh. Trải qua 46 năm hình
-              thành và phát triển, Bảo tàng Lâm Đồng luôn hoàn thành tốt nhiệm
-              vụ chính trị và nhiều lần được nhận bằng khen của Bộ Văn hóa -
-              Thông tin (nay là Bộ Văn hóa - Thể thao và Du lịch), của Ủy ban
-              nhân dân tỉnh Lâm Đồng.
+              Nằm cuối dãy Trường Sơn - Nam Tây Nguyên trên độ cao khống chế đối
+              với các vùng lân cận, Lâm Đồng có vị trí chiến lược rất quan trọng
+              về quân sự. Lâm Đồng là đầu mối giao thông quan trọng nối liền Nam
+              Bộ với Tây Nguyên, nối liền đồng bằng với miền Tây cực Nam Trung
+              Bộ.
             </p>
           </>
         ),
       },
       {
-        id: "atf1",
-        name: "Bộ sưu tập đàn đá",
-        img: "https://www.baotanglamdong.com.vn/cache/c/3c88df7208cfc56b2ee91cfffed33979.JPG",
+        id: "atf5",
+        name: "Bộ sưu tập cổ vật cung đình triều Nguyễn tại Bảo tàng Lâm Đồng",
+        img: "https://www.baotanglamdong.com.vn/images/hinhanhbaiviet/Long_bst_co_vat_cung_dinh_trieu_nguyen_04.JPG",
         content: (
           <>
             <p>
-              Ngay sau khi đất nước độc lập, thống nhất, công tác bảo tồn, bảo
-              tàng ở Lâm Đồng đã được lãnh đạo tỉnh quan tâm. Tháng 8 năm 1975,
-              bộ phận Bảo tồn - Bảo tàng được thành lập, trực thuộc Thành ủy Đà
-              Lạt, với nhiệm vụ sưu tầm, gìn giữ và bảo quản những hiện vật, tư
-              liệu có giá trị lịch sử, văn hóa của tỉnh. Trải qua 46 năm hình
-              thành và phát triển, Bảo tàng Lâm Đồng luôn hoàn thành tốt nhiệm
-              vụ chính trị và nhiều lần được nhận bằng khen của Bộ Văn hóa -
-              Thông tin (nay là Bộ Văn hóa - Thể thao và Du lịch), của Ủy ban
-              nhân dân tỉnh Lâm Đồng.
-            </p>
-          </>
-        ),
-      },
-      {
-        id: "atf1",
-        name: "Bộ sưu tập đàn đá",
-        img: "https://www.baotanglamdong.com.vn/cache/c/3c88df7208cfc56b2ee91cfffed33979.JPG",
-        content: (
-          <>
-            <p>
-              Ngay sau khi đất nước độc lập, thống nhất, công tác bảo tồn, bảo
-              tàng ở Lâm Đồng đã được lãnh đạo tỉnh quan tâm. Tháng 8 năm 1975,
-              bộ phận Bảo tồn - Bảo tàng được thành lập, trực thuộc Thành ủy Đà
-              Lạt, với nhiệm vụ sưu tầm, gìn giữ và bảo quản những hiện vật, tư
-              liệu có giá trị lịch sử, văn hóa của tỉnh. Trải qua 46 năm hình
-              thành và phát triển, Bảo tàng Lâm Đồng luôn hoàn thành tốt nhiệm
-              vụ chính trị và nhiều lần được nhận bằng khen của Bộ Văn hóa -
-              Thông tin (nay là Bộ Văn hóa - Thể thao và Du lịch), của Ủy ban
-              nhân dân tỉnh Lâm Đồng.
-            </p>
-          </>
-        ),
-      },
-      {
-        id: "atf1",
-        name: "Bộ sưu tập đàn đá",
-        img: "https://www.baotanglamdong.com.vn/cache/c/3c88df7208cfc56b2ee91cfffed33979.JPG",
-        content: (
-          <>
-            <p>
-              Ngay sau khi đất nước độc lập, thống nhất, công tác bảo tồn, bảo
-              tàng ở Lâm Đồng đã được lãnh đạo tỉnh quan tâm. Tháng 8 năm 1975,
-              bộ phận Bảo tồn - Bảo tàng được thành lập, trực thuộc Thành ủy Đà
-              Lạt, với nhiệm vụ sưu tầm, gìn giữ và bảo quản những hiện vật, tư
-              liệu có giá trị lịch sử, văn hóa của tỉnh. Trải qua 46 năm hình
-              thành và phát triển, Bảo tàng Lâm Đồng luôn hoàn thành tốt nhiệm
-              vụ chính trị và nhiều lần được nhận bằng khen của Bộ Văn hóa -
-              Thông tin (nay là Bộ Văn hóa - Thể thao và Du lịch), của Ủy ban
-              nhân dân tỉnh Lâm Đồng.
+              Được sự quan tâm, chỉ đạo của Ủy ban nhân dân tỉnh, Sở Văn hóa,
+              Thể thao và Du lịch Lâm Đồng, Bảo tàng Lâm Đồng đã tiếp nhận 124
+              hiện vật từ Kho bạc Nhà nước do Sở Tài chính Lâm Đồng bàn giao.
+              Các hiện vật từng được vua quan, hoàng tộc triều Nguyễn sử dụng,
+              trong đó có một số hiện vật của vua Tự Đức, vua Khải Định, đặc
+              biệt là những hiện vật của vua Bảo Đại và Nam Phương Hoàng hậu.
             </p>
           </>
         ),
@@ -513,6 +459,197 @@ export const rightBoxData: IRightBoxContent[] = [
         kính. Và chứa đựng bên trong là những tác phẩm tranh thêu tuyệt mỹ. Đây
         là một không gian nghệ thuật để bạn đến. Và tìm hiểu những nét văn hóa
         của nghề thêu truyền thống.
+      </div>
+    ),
+  },
+];
+
+export const artifactsDetailsData: any = [
+  {
+    id: "atf1",
+    name: "Bộ sưu tập đàn đá",
+    content: (
+      <>
+        <i>
+          Ngay sau khi đất nước độc lập, thống nhất, công tác bảo tồn, bảo tàng
+          ở Lâm Đồng đã được lãnh đạo tỉnh quan tâm. Tháng 8 năm 1975, bộ phận
+          Bảo tồn - Bảo tàng được thành lập, trực thuộc Thành ủy Đà Lạt, với
+          nhiệm vụ sưu tầm, gìn giữ và bảo quản những hiện vật, tư liệu có giá
+          trị lịch sử, văn hóa của tỉnh. Trải qua 46 năm hình thành và phát
+          triển, Bảo tàng Lâm Đồng luôn hoàn thành tốt nhiệm vụ chính trị và
+          nhiều lần được nhận bằng khen của Bộ Văn hóa - Thông tin (nay là Bộ
+          Văn hóa - Thể thao và Du lịch), của Ủy ban nhân dân tỉnh Lâm Đồng.
+        </i>
+        <img src="https://www.baotanglamdong.com.vn/cache/c/3c88df7208cfc56b2ee91cfffed33979.JPG" />
+        <i>
+          Một phần bộ sưu tập đàn đá độc đáo được sưu tầm và trưng bày tại Bảo
+          tàng Lâm Đồng.
+        </i>
+        <p>
+          Nói đến công tác nghiên cứu, sưu tầm hiện vật bảo tàng là nói đến việc
+          “nghiên cứu, phát hiện, lựa chọn và thu thập các hiện vật gốc mang ý
+          nghĩa, giá trị bảo tàng phản ánh về lịch sử tự nhiên, lịch sử xã hội,
+          về con người và môi trường tồn tại theo phương pháp khoa học tùy theo
+          nội dung và loại hình của bảo tàng và là công tác bổ sung thường xuyên
+          cho kho cơ sở của bảo tàng” (theo Giáo trình sưu tầm hiện vật bảo tàng
+          - 2011).
+        </p>
+        <p>
+          Kết quả của công tác sưu tầm là hiện vật, hình ảnh và tư liệu, trong
+          đó hiện vật chính là cơ sở cho mọi hoạt động của bảo tàng. Hiện nay,
+          có khá nhiều định nghĩa về hiện vật bảo tàng, nhưng nhìn chung đều
+          thống nhất rằng: hiện vật bảo tàng là bằng chứng vật chất về thiên
+          nhiên, con người và môi trường sống của con người, có giá trị lịch sử,
+          văn hóa, khoa học, thẩm mỹ, được bảo tàng sưu tầm, nghiên cứu, xác
+          minh, hoàn thiện hồ sơ khoa học và hồ sơ pháp lý cho hiện vật. Như
+          vậy, hiện vật bảo tàng là một khái niệm rộng, bao gồm nhiều loại hình,
+          chất liệu và hình thức (hiện vật thể khối, tài liệu chữ viết, tác phẩm
+          nghệ thuật, phim ảnh, băng ghi âm…).
+        </p>
+        <p>
+          Hiện vật chính là ngôn ngữ của bảo tàng, là cơ sở cho mọi hoạt động
+          của bảo tàng, không có hiện vật thì không có bảo tàng và các hoạt động
+          liên quan đến bảo tàng. Hiện vật là trung tâm, vừa là mục tiêu, vừa là
+          điểm xuất phát của bảo tàng. Vì vậy, để có hiện vật phù hợp với loại
+          hình và yêu cầu cụ thể thì bảo tàng phải tiến hành công tác nghiên
+          cứu, sưu tầm, tức là phải sử dụng tổng hợp tất cả các biện pháp để có
+          được hiện vật, thông qua nhiều kênh, nhiều phương pháp sưu tầm khác
+          nhau, như sưu tầm trực tiếp thông qua việc tổ chức các đợt khảo sát,
+          điền dã, nghiên cứu, khai quật khảo cổ…; sưu tầm gián tiếp qua các nhà
+          sưu tập như tiếp nhận các hiện vật hiến tặng, mua, trao đổi; tiếp nhận
+          các hiện vật tịch thu và bàn giao từ các cơ quan chức năng.v.v…
+        </p>
+        <img src="https://www.baotanglamdong.com.vn/cache/6/66c90c581991572967cbb7cd7adb67eb.JPG"></img>
+        <i>
+          Cán bộ Bảo tàng Lâm Đồng tiến hành sưu tầm hiện vật trong vùng đồng
+          bào Mạ.
+        </i>
+        <p>
+          Trong giai đoạn chuẩn bị đợt trưng bày, triển lãm, nhiệm vụ trọng tâm
+          của công tác sưu tầm là đáp ứng yêu cầu hiện vật cho trưng bày, triển
+          lãm dù là cố định, chuyên đề hay lưu động. Sau khi trưng bày mở cửa,
+          nhiệm vụ tiếp theo của công tác sưu tầm là hoàn chỉnh thủ tục hồ sơ
+          pháp lý, khoa học cho hiện vật để lưu trữ, bổ sung cho kho hiện vật
+          bảo tàng. Hiện vật bảo tàng càng phong phú, đa dạng và được nghiên
+          cứu, xác định khoa học một cách toàn diện, kỹ lưỡng, chính xác sẽ tạo
+          điều kiện thuận lợi và phục vụ tốt cho công tác trưng bày, triển lãm,
+          công tác tuyên truyền, giáo dục và quảng bá hình ảnh bảo tàng đến với
+          công chúng.
+        </p>
+        <p>
+          Xác định tầm quan trọng của hiện vật trong hoạt động của bảo tàng,
+          ngay từ những ngày đầu thành lập (tháng 8/1975), Bảo tàng Lâm Đồng
+          luôn quan tâm đến công tác sưu tầm để làm giàu cho kho cơ sở. Tổng số
+          hiện vật tại Bảo tàng Lâm Đồng tính đến ngày 30/12/2020 có trên 12.400
+          hiện vật (với trên 17.700 đơn vị hiện vật).
+        </p>
+        <p>
+          Hiện nay, để thuận lợi trong công tác quản lý, kho hiện vật Bảo tàng
+          Lâm Đồng được phân làm ba mảng kho riêng biệt, bao gồm: Kho khảo cổ
+          trên 9.000 hiện vật (trên 14.000 đơn vị hiện vật); Kho dân tộc trên
+          1.000 hiện vật (trên 1.000 đơn vị hiện vật); Kho tổng hợp trên 1.900
+          hiện vật (trên 1.600 đơn vị hiện vật).
+        </p>
+        <p>
+          Sau khi tiếp nhận quản lý và phát huy giá trị Di tích Nhà lao thiếu
+          nhi Đà Lạt (năm 2016) và Di tích Khảo cổ Cát Tiên (năm 2018), Bảo tàng
+          Lâm Đồng hiện nay có ba địa điểm hành chính, các hiện vật tiếp tục
+          được quản lý thống nhất và phát huy thường xuyên. Trong đó: Hiện vật
+          bảo tàng trên 12.000 hiện vật (trên 17.000 đơn vị hiện vật); Hiện vật
+          thuộc Di tích quốc gia Nhà lao thiếu nhi Đà lạt 49 hiện vật (51 đơn vị
+          hiện vật); Hiện vật thuộc Di tích quốc gia đặc biệt Khảo cổ Cát Tiên
+          308 hiện vật (345 đơn vị hiện vật).
+        </p>
+        <p>
+          Các hiện vật của Bảo tàng Lâm Đồng hiện nay rất đa dạng, được quản lý
+          an toàn và phân loại khoa học như: kim loại, da, đá, mộc, thủy tinh,
+          hóa chất, giấy, phim ảnh, xương, gốm.v.v… Riêng kho tổng hợp với gần
+          2.000 hiện vật bao gồm các mảng, như kháng chiến, mẹ Việt Nam anh
+          hùng, thiên nhiên, Đà Lạt xưa, lịch sử văn hóa; hiện vật về xây dựng
+          và bảo vệ Tổ quốc… Ngoài ra, còn có các phim tư liệu về danh lam thắng
+          cảnh, điểm tham quan du lịch, các bộ sưu tập hiện vật thuộc Bảo tàng
+          Lâm Đồng, đặc biệt là các di sản văn hóa phi vật thể của các dân tộc
+          bản địa trên địa bàn tỉnh…, là nguồn di sản sinh động, quý giá phục vụ
+          nghiên cứu và phát huy giá trị di sản văn hóa.
+        </p>
+        <p>
+          Để phát huy vai trò, vị trí của công tác sưu tầm, góp phần đổi mới
+          chất lượng công tác trưng bày, triển lãm trong thời gian tới, Bảo tàng
+          Lâm Đồng cần quan tâm một số vấn đề sau đây: Xác định công tác nghiên
+          cứu, sưu tầm là một trong những nhiệm vụ quan trọng, không thể thiếu
+          trong nghị quyết nhiệm kỳ và kế hoạch thường niên của Bảo tàng Lâm
+          Đồng. Căn cứ chủ trương, nghị quyết, bộ phận chuyên môn có trách nhiệm
+          tham mưu kế hoạch ngắn hạn, trung hạn, thậm chí dài hạn để có những
+          điều chỉnh sưu tầm kịp thời, từ đó thực hiện các đề cương chi tiết cho
+          từng nhiệm vụ, mục tiêu mà kế hoạch đặt ra.
+        </p>
+        <p>
+          Quan tâm đầu tư kinh phí hàng năm cho công tác sưu tầm. Nghiên cứu ban
+          hành các quy định, quy chế về hạn mức tự quyết kinh phí cho tổ sưu tầm
+          hiện vật khi đi thực địa để thuận tiện trong quá trình sưu tầm, tránh
+          rườm rà về quy trình, thủ tục tài chính mà vẫn đảm bảo yêu cầu, quy
+          định pháp luật hiện hành.
+        </p>
+        <p>
+          Kiện toàn công tác nhân sự, đặc biệt là quy hoạch, tuyển dụng hoặc
+          luân chuyển, điều động những vị trí việc làm có chuyên môn đào tạo phù
+          hợp, đúng chuyên ngành, đáp ứng yêu cầu đặt ra. Tiếp tục quan tâm chất
+          lượng nhân lực bộ phận sưu tầm và quản lý hiện vật, cử viên chức tham
+          gia các khóa tập huấn, bồi dưỡng chuyên môn, nghiệp vụ.
+        </p>
+        <p>
+          Phòng Sưu tầm - Quản lý hiện vật cần chủ động nắm bắt tình hình thời
+          sự, chính trị, kinh tế - văn hóa - xã hội, thường xuyên giữ mối quan
+          hệ chặt chẽ với các cơ quan, địa phương để kịp thời phát hiện và tham
+          mưu các kế hoạch sưu tầm đạt kết quả tốt nhất. Đồng thời, xác định
+          công tác sưu tầm là hết sức quan trọng, phải được tổ chức thường
+          xuyên, liên tục để làm giàu kho hiện vật bảo tàng.
+        </p>
+      </>
+    ),
+  },
+];
+export const rightBoxDataATF: IRightBoxContent[] = [
+  {
+    key: "atf2",
+    date: moment().format("DD/MM/YYYY"),
+    img: "https://www.baotanglamdong.com.vn/images/phocagallery/thiennhien_6.jpg",
+    title: "Thiên nhiên Lâm Đồng",
+    content: (
+      <div>
+        Lâm Đồng là tỉnh miền núi nam Tây Nguyên với diện tích 9.764,79 km2,
+        trong đó diện tích rừng chiếm 618.815 ha, với mật độ che phủ 63% diện
+        tích toàn tỉnh. Hiện nay, Lâm Đồng có hai khu rừng quốc gia: vườn quốc
+        gia Bidup Núi Bà và một phần vườn quốc gia Cát Tiên.
+      </div>
+    ),
+  },
+  {
+    key: "atf3",
+    date: moment().format("DD/MM/YYYY"),
+    img: "https://www.baotanglamdong.com.vn/images/hinhanhbaiviet/dantoc2.jpg",
+    title: "Văn hóa các dân tộc Mạ, Cơho, Churu",
+    content: (
+      <div>
+        Lâm đồng là tỉnh có nhiều thành phần dân tộc. Theo thống kê gần đây, Lâm
+        Đồng có tới 42 dân tộc. Trong đó người Mạ, Cơho và Churu là ba dân tộc
+        sinh sống lâu đời trên mảnh đất này. Vì vậy, việc giới thiệu đặc trưng
+        văn hóa các dân tộc bản địa: Mạ, Cơho và Churu là một trong những nội
+        dung trưng bày chính của Bảo Tàng Lâm Đồng.
+      </div>
+    ),
+  },
+  {
+    key: "atf4",
+    date: moment().format("DD/MM/YYYY"),
+    img: "https://www.baotanglamdong.com.vn/images/hinhanhbaiviet/1-KhangChien.jpg",
+    title: "Phong trào đấu tranh cách mạng tỉnh Lâm Đồng",
+    content: (
+      <div>
+        Nằm cuối dãy Trường Sơn - Nam Tây Nguyên trên độ cao khống chế đối với
+        các vùng lân cận, Lâm Đồng có vị trí chiến lược rất quan trọng về quân
+        sự. Lâm Đồng là đầu mối giao thông quan trọng nối liền Nam Bộ với Tây
+        Nguyên, nối liền đồng bằng với miền Tây cực Nam Trung Bộ.
       </div>
     ),
   },

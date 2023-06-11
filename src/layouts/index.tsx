@@ -1,27 +1,32 @@
 import Header from "@/components/Header";
 import "antd/dist/reset.css";
 import { useEffect, useLayoutEffect, useState } from "react";
-import { Outlet } from "umi";
+import { Outlet, useLocation } from "umi";
 import "./index.less";
 import Footer from "@/components/Footer";
 import { useModel } from "umi";
 
 export default function Layout() {
   const { path } = useModel("path");
-  const [scrollPosition, setPosition] = useState<number>(0);
+  const [footerPosition, setFooterPosition] = useState<number>(0);
   useLayoutEffect(() => {
     function updatePosition() {
-      setPosition(window.pageYOffset);
+      let footerPoint: any = document
+        .getElementById("footer-cpn")
+        ?.getBoundingClientRect()?.y;
+      setFooterPosition(footerPoint);
     }
     window.addEventListener("scroll", updatePosition);
     updatePosition();
     return () => window.removeEventListener("scroll", updatePosition);
   }, []);
 
+  console.log(footerPosition);
+
   return (
     <div
       className={`layout-container ${
-        scrollPosition > 3800 ? "over-flow-scroll" : ""
+        footerPosition < 670 ? "over-flow-scroll" : ""
       }`}
     >
       <Header />

@@ -12,7 +12,7 @@ import iconT from "@/assets/icon T.svg";
 export default function Footer() {
   const listSocialBtn: any = [iconF, iconI, iconP, iconT];
   return (
-    <div className="footer-component-container">
+    <div className="footer-component-container" id="footer-cpn">
       <img src={footerImg} />
       <div className="title-footer">
         <label.xxl>Đăng ký nhận tin</label.xxl>

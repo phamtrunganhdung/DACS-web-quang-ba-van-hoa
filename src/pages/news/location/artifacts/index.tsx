@@ -2,7 +2,7 @@ import { ButtonFloatLeft } from "@/components/Button";
 import { label } from "@/components/Label";
 import "./index.less";
 import { useEffect, useState } from "react";
-import { useLocation } from "umi";
+import { useLocation, useModel } from "umi";
 import { getParameterByName } from "@/utils";
 import { artifactsData } from "../data";
 import BodyTitle from "@/components/BodyTitle";
@@ -10,6 +10,7 @@ import { Row, Col } from "antd";
 
 export default function Artifacts() {
   const [artifacts, setArtifacts] = useState<any>(null);
+  const { updatePath } = useModel("path");
   const location = useLocation();
   useEffect(() => {
     let idFromUrl: string | null = getParameterByName("id");
@@ -29,7 +30,16 @@ export default function Artifacts() {
           artifacts?.lstArtifacts?.length > 0 &&
           artifacts?.lstArtifacts?.map((item: any, index: number) => {
             return (
-              <Col span={12} className="artifacts-box" key={index}>
+              <Col
+                span={12}
+                className="artifacts-box"
+                key={index}
+                onClick={() => {
+                  updatePath(
+                    `/news/location/artifacts/details-artifacts?id=${item.id}`
+                  );
+                }}
+              >
                 <img src={item?.img} />
                 <div className="artifacts-box-info">
                   <label.xl>{item?.name}</label.xl>
