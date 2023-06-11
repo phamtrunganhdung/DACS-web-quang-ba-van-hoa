@@ -13,9 +13,15 @@ export interface IRightBox {
   header: string;
   id: string | number;
   data: IRightBoxContent[];
+  pathRedirect: string;
 }
 
-export default function RightBox({ header, id, data }: IRightBox) {
+export default function RightBox({
+  header,
+  id,
+  data,
+  pathRedirect,
+}: IRightBox) {
   const { updatePath } = useModel("path");
   return (
     <div className="right-box-container" key={id}>
@@ -33,7 +39,7 @@ export default function RightBox({ header, id, data }: IRightBox) {
                 <img
                   src={i?.img}
                   onClick={() => {
-                    updatePath(`/news/location/details-location?id=${i?.key}`);
+                    updatePath(`${pathRedirect}?id=${i?.key}`);
                   }}
                 />
                 <div className="r-info-box">

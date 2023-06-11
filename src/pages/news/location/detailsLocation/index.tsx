@@ -41,7 +41,12 @@ export default function DetailsLocation() {
         }
         rightContent={
           <div className="detail-location-right-content">
-            <RightBox header="Địa điểm" id="lct" data={rightBoxData}></RightBox>
+            <RightBox
+              header="Địa điểm"
+              id="lct"
+              data={rightBoxData}
+              pathRedirect="/news/location/details-location"
+            ></RightBox>
           </div>
         }
       />

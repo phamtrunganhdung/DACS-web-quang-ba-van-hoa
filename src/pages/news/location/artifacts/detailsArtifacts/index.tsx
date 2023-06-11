@@ -42,6 +42,7 @@ export default function DetailsArtifacts() {
               header="Hiện vật khác"
               id="atf"
               data={rightBoxDataATF}
+              pathRedirect="/news/location/artifacts/details-artifacts"
             ></RightBox>
           </div>
         }
