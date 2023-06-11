@@ -9,24 +9,25 @@ import { useModel } from "umi";
 export default function Layout() {
   const { path } = useModel("path");
   const [footerPosition, setFooterPosition] = useState<number>(0);
+  const footerY: number = 665;
   useLayoutEffect(() => {
     function updatePosition() {
       let footerPoint: any = document
         .getElementById("footer-cpn")
         ?.getBoundingClientRect()?.y;
-      setFooterPosition(footerPoint);
+      if (window.scrollY == 0 && footerPoint < footerY)
+        setFooterPosition(footerY);
+      else setFooterPosition(footerPoint);
     }
     window.addEventListener("scroll", updatePosition);
     updatePosition();
     return () => window.removeEventListener("scroll", updatePosition);
-  }, []);
-
-  console.log(footerPosition);
+  }, [window.scrollY]);
 
   return (
     <div
       className={`layout-container ${
-        footerPosition < 670 ? "over-flow-scroll" : ""
+        footerPosition < footerY ? "over-flow-scroll" : ""
       }`}
     >
       <Header />
