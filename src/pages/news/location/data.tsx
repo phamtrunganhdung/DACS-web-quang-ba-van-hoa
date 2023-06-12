@@ -653,4 +653,22 @@ export const rightBoxDataATF: IRightBoxContent[] = [
       </div>
     ),
   },
+  {
+    key: "atf5",
+    date: moment().format("DD/MM/YYYY"),
+    img: "https://www.baotanglamdong.com.vn/cache/e/0e095bb073ecba4992c56826aeadb66c.jpg",
+    title: "Bộ sưu tập khảo cổ Cát Tiên",
+    content: (
+      <div>
+        Thánh địa Cát Tiên được phát hiện từ năm 1985. Đây là một quần thể di
+        tích rộng lớn nằm rải rác dọc theo tả ngạn sông Đồng Nai với chiều dài
+        khoảng 15km từ xã Quảng Ngãi đến xã Đức Phổ, huyện Cát Tiên. Trong đó,
+        tập trung chủ yếu ở khu vực xã Quảng Ngãi. Theo nhận định của các nhà
+        khoa học thì đây là một khu Thánh địa với nhiều đền tháp, mộ tháp chịu
+        ảnh hưởng từ Ấn Độ giáo tồn tại cách ngày nay trên nghìn năm. Di tích
+        Cát Tiên hiện đang được giới khoa học trong và ngoài nước quan tâm
+        nghiên cứu.
+      </div>
+    ),
+  },
 ];

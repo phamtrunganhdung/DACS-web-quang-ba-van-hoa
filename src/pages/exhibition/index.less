@@ -1,0 +1,35 @@
+@import url("../../variable.less");
+.exhibition-container {
+  width: 120%;
+  .exhibition-content {
+    .title-exhibition {
+      border-bottom: 1px solid @themeColor;
+      span {
+        background: @themeColor;
+        width: fit-content;
+        padding: 5px 10px;
+        color: #ffffff;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    }
+    .box-exhibition {
+      padding: 5px 0;
+      line-height: 20px;
+      span {
+        font-size: 14px !important;
+      }
+      .box-exhibition-content {
+        img {
+          width: 250px;
+          height: 160px;
+          object-fit: fill;
+          float: left;
+          margin: 5px 10px 0 0;
+        }
+        font-style: italic;
+        text-align: justify;
+      }
+    }
+  }
+}

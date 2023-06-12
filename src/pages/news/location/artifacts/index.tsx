@@ -38,7 +38,8 @@ export default function Artifacts() {
               artifacts?.lstArtifacts?.map((item: any, index: number) => {
                 return (
                   <Col
-                    span={12}
+                    xxl={8}
+                    lg={12}
                     className="artifacts-box"
                     key={index}
                     onClick={() => {

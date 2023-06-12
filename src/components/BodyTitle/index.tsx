@@ -48,8 +48,12 @@ export default function BodyTitle({ details = "" }: any) {
         })?.name || "";
       return name;
     });
+    let bdTitle: string = nameArr.join(" > ");
+    if (bdTitle.includes(">  >")) {
+      bdTitle = bdTitle.replaceAll(">  >", " > ");
+    }
 
-    return nameArr.join(" > ");
+    return bdTitle;
   };
 
   return (
