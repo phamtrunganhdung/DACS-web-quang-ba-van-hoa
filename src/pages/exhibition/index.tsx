@@ -38,7 +38,6 @@ export default function Exhibition() {
                       </strong>
                       <div className="box-exhibition-content">
                         <img src={item?.image}></img>
-                        {item?.content}
                       </div>
                     </div>
                   </Col>
