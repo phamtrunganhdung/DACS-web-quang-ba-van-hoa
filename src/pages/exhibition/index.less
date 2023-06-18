@@ -1,6 +1,6 @@
 @import url("../../variable.less");
 .exhibition-container {
-  width: 120%;
+  width: calc(100vw - 450px);
   .exhibition-content {
     .title-exhibition {
       border-bottom: 1px solid @themeColor;
@@ -17,14 +17,14 @@
       padding: 5px 0;
       line-height: 20px;
       display: flex;
-    flex-direction: column;
-    gap: 10px;
+      flex-direction: column;
+      gap: 10px;
       span {
         font-size: 16px !important;
         font-weight: 600 !important;
         color: @themeColor !important;
         display: flex;
-    justify-content: center;
+        justify-content: center;
       }
       .box-exhibition-content {
         img {
