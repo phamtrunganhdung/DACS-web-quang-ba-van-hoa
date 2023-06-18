@@ -18,6 +18,10 @@ export default {
     },
     { path: "/news/picAndVid", component: "news/picAndVid" },
     { path: "/exhibition", component: "exhibition" },
+    {
+      path: "/exhibition/details-exhibition",
+      component: "exhibition/detailsExhibition",
+    },
     { path: "/contact", component: "contact" },
   ],
   title: "Web quảng bá văn hóa",

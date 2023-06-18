@@ -494,6 +494,7 @@ export const artifactsDetailsData: any = [
           cho kho cơ sở của bảo tàng” (theo Giáo trình sưu tầm hiện vật bảo tàng
           - 2011).
         </p>
+        <img src="http://adammuzic.vn/wp-content/uploads/2018/05/%C4%90%C3%A0n-%C4%90%C3%A1-1-ADAM-Muzic-190518.png" />
         <p>
           Kết quả của công tác sưu tầm là hiện vật, hình ảnh và tư liệu, trong
           đó hiện vật chính là cơ sở cho mọi hoạt động của bảo tàng. Hiện nay,
@@ -506,6 +507,7 @@ export const artifactsDetailsData: any = [
           chất liệu và hình thức (hiện vật thể khối, tài liệu chữ viết, tác phẩm
           nghệ thuật, phim ảnh, băng ghi âm…).
         </p>
+        <img src="http://adammuzic.vn/wp-content/uploads/2018/05/%C4%90%C3%A0n-%C4%91%C3%A1-6-ADAM-Muzic-190518.png" />
         <p>
           Hiện vật chính là ngôn ngữ của bảo tàng, là cơ sở cho mọi hoạt động
           của bảo tàng, không có hiện vật thì không có bảo tàng và các hoạt động
@@ -536,6 +538,7 @@ export const artifactsDetailsData: any = [
           công tác tuyên truyền, giáo dục và quảng bá hình ảnh bảo tàng đến với
           công chúng.
         </p>
+        <img src="http://adammuzic.vn/wp-content/uploads/2018/05/%C4%90%C3%A0n-%C4%90%C3%A1-3-ADAM-Muzic-190518.jpg" />
         <p>
           Xác định tầm quan trọng của hiện vật trong hoạt động của bảo tàng,
           ngay từ những ngày đầu thành lập (tháng 8/1975), Bảo tàng Lâm Đồng

@@ -37,7 +37,14 @@ export default function Exhibition() {
                         <label.lg>{item?.title}</label.lg>
                       </strong>
                       <div className="box-exhibition-content">
-                        <img src={item?.image}></img>
+                        <img
+                          src={item?.image}
+                          onClick={() => {
+                            updatePath(
+                              `/exhibition/details-exhibition?id=${item.id}`
+                            );
+                          }}
+                        ></img>
                       </div>
                     </div>
                   </Col>
