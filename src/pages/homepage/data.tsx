@@ -29,11 +29,10 @@ export const homePageData: any = [
     titleL: "DINH I ĐÀ LẠT",
     contentL: (
       <p>
-        Dinh 1 Đà Lạthay còn được du khách biết đến với tên gọi là Dinh Bảo Đại
+        Dinh 1 Đà Lạt hay còn được du khách biết đến với tên gọi là Dinh Bảo Đại
         1. Đà Lạt là một thành phố có khí hậu quanh năm mát mẻ, dễ chịu. Nơi đây
         không khác gì một thiêng đường trong mơ mà ai ai cũng ao ước được sống ở
-        đây. Chính vì thế mà vua Bảo Đại đã chọn xây dựng nên 3 dinh thự xa hoa
-        tráng lệ...
+        đây. Chính vì thế mà vua Bảo Đại đã chọn xây dựng nên 3 dinh thự ...
       </p>
     ),
     imgL: "https://du-lich-da-lat.com/wp-content/uploads/2019/09/dinh-1-da-lat.jpg",

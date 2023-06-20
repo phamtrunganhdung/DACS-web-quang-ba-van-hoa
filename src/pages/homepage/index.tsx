@@ -47,7 +47,7 @@ export default function HomePage() {
           ))}
         </Carousel>
       </div>
-      <Carousel autoplay>
+      <Carousel autoplay effect="fade">
         {homePageData.map((item: any, index: number) => (
           <HomPageContent data={item} key={index} />
         ))}

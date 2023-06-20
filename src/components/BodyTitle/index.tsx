@@ -48,9 +48,9 @@ export default function BodyTitle({ details = "" }: any) {
         })?.name || "";
       return name;
     });
-    let bdTitle: string = nameArr.join(" > ");
-    if (bdTitle.includes(">  >")) {
-      bdTitle = bdTitle.replaceAll(">  >", " > ");
+    let bdTitle: string = nameArr.join(" / ");
+    if (bdTitle.includes("/  /")) {
+      bdTitle = bdTitle.replaceAll("/  /", " / ");
     }
 
     return bdTitle;
