@@ -17,7 +17,6 @@ export default function Video() {
                 <div className="video-content">
                   <label.lg>{`Tác giả : ${item?.author}`}</label.lg>
                   <label.lg>{`Ngày đăng : ${item?.submittedDate}`}</label.lg>
-                  <label.lg>Xem video gốc</label.lg>
                   <div className="origin-link">
                     <label.lg>Xem video gốc</label.lg>
                     <i>

@@ -83,6 +83,15 @@ export const videoData: any = [
     submittedDate: "27/2/2017",
   },
   {
+    id: "btld2",
+    name: "Bảo Tàng Lâm Đồng - TP.Đà Lạt - Tỉnh Lâm Đồng - Việt Nam",
+    originLink:
+      "https://www.youtube.com/watch?v=oLlEH1NkunU&ab_channel=HANANhippho",
+    video: "https://www.youtube.com/embed/oLlEH1NkunU",
+    author: "HANA Nhippho",
+    submittedDate: "24/01/2019",
+  },
+  {
     id: "cctn2",
     name: "Cồng chiêng Tây Nguyên",
     originLink:
@@ -99,14 +108,5 @@ export const videoData: any = [
     video: "https://www.youtube.com/embed/XINPJrIol3k",
     author: "Le Tuan Anh",
     submittedDate: "02/08/2019",
-  },
-  {
-    id: "btld2",
-    name: "Bảo Tàng Lâm Đồng - TP.Đà Lạt - Tỉnh Lâm Đồng - Việt Nam",
-    originLink:
-      "https://www.youtube.com/watch?v=oLlEH1NkunU&ab_channel=HANANhippho",
-    video: "https://www.youtube.com/embed/oLlEH1NkunU",
-    author: "HANA Nhippho",
-    submittedDate: "24/01/2019",
   },
 ];
