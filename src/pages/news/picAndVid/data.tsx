@@ -53,8 +53,8 @@ export const pictureData: any = [
     id: "ddtn",
     name: "Đàn đá Tây Nguyên",
     listImg: [
-      "https://www.baotanglamdong.com.vn/cache/c/3c88df7208cfc56b2ee91cfffed33979.JPG",
       "http://adammuzic.vn/wp-content/uploads/2018/05/%C4%90%C3%A0n-%C4%90%C3%A1-1-ADAM-Muzic-190518.png",
+      "https://www.baotanglamdong.com.vn/cache/c/3c88df7208cfc56b2ee91cfffed33979.JPG",
       "https://www.baotanglamdong.com.vn/cache/6/66c90c581991572967cbb7cd7adb67eb.JPG",
       "http://adammuzic.vn/wp-content/uploads/2018/05/%C4%90%C3%A0n-%C4%91%C3%A1-6-ADAM-Muzic-190518.png",
       "http://adammuzic.vn/wp-content/uploads/2018/05/%C4%90%C3%A0n-%C4%90%C3%A1-3-ADAM-Muzic-190518.jpg",

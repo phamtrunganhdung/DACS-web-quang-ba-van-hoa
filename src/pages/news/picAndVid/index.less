@@ -1,12 +1,6 @@
 .pic-and-vid-container {
   width: calc(100vw - 450px);
   .pic-and-vid-content {
-    .title-pic-n-vid {
-      color: #420101;
-      font-style: italic;
-      font-size: 20px !important;
-      font-weight: 600;
-    }
     .picture {
       border-bottom: 1px solid #420101;
       padding-bottom: 10px;
@@ -48,7 +42,7 @@
             }
             .other-pic {
               display: grid;
-              grid-template-columns: 33% 33% 33%;
+              grid-template-columns: 1fr 1fr 1fr;
               gap: 5px;
               height: 30%;
               min-height: 30%;
@@ -85,5 +79,63 @@
     .video {
       padding: 10px 0;
     }
+    .ant-tabs-tab:hover {
+      color: #0c6122 !important;
+    }
+    .ant-tabs-tab-btn {
+      color: #0c6122 !important;
+      font-size: 17px;
+      font-weight: 600;
+    }
+    .ant-tabs-ink-bar {
+      background: #0c6122 !important;
+    }
   }
+}
+.details-pic-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 500px 1fr;
+  height: 400px;
+  position: relative;
+  .details-pic {
+    .box-img {
+      border-radius: 10px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    .box-title {
+      font-weight: 600;
+      font-size: 16px;
+      position: absolute;
+      left: 300px;
+      bottom: 0;
+    }
+  }
+  .btn-move {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    button {
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      transition: 0.2s;
+      &:hover {
+        scale: 1.2;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.ant-modal-content,
+.ant-modal-title {
+  background-color: #e0e0e0 !important;
 }

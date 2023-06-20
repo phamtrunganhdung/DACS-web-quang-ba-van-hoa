@@ -3,11 +3,11 @@ import "./index.less";
 import { label } from "@/components/Label";
 import moment from "moment";
 export interface IPageContent {
-  title: string | null;
-  showDateSubmitted: boolean;
-  dateSubmitted: string | null;
+  title?: string | null;
+  showDateSubmitted?: boolean;
+  dateSubmitted?: string | null;
   content: any;
-  rightContent: any;
+  rightContent?: any;
 }
 export default function PageContent({
   title,
