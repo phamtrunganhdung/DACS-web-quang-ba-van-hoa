@@ -78,6 +78,50 @@
     }
     .video {
       padding: 10px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      .video-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        .video-play {
+          iframe {
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+          }
+        }
+        .video-info {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          justify-content: space-between;
+          padding: 10px;
+          border: 2px solid #0c6122;
+          border-radius: 10px;
+          .video-title {
+            font-size: 17px;
+            font-weight: 700;
+          }
+          .video-content {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .origin-link {
+              display: flex;
+              gap: 5px;
+              align-items: center;
+              justify-content: start;
+              a {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
     }
     .ant-tabs-tab:hover {
       color: #0c6122 !important;

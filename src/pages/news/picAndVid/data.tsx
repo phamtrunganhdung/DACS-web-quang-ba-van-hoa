@@ -71,3 +71,42 @@ export const pictureData: any = [
     ],
   },
 ];
+
+export const videoData: any = [
+  {
+    id: "cctn1",
+    name: "Cồng chiêng Tây Nguyên - nét đẹp văn hóa buôn làng (buôn A Ko Thong, TP Buôn Ma Thuột, Đắk Lắk)",
+    originLink:
+      "https://www.youtube.com/watch?v=kKZQuRjl9Dc&ab_channel=D%C5%A9ngNguy%E1%BB%85n",
+    video: "https://www.youtube.com/embed/kKZQuRjl9Dc",
+    author: "Dũng Nguyễn",
+    submittedDate: "27/2/2017",
+  },
+  {
+    id: "cctn2",
+    name: "Cồng chiêng Tây Nguyên",
+    originLink:
+      "https://www.youtube.com/watch?v=6LHv9OFfRa0&ab_channel=%C4%90%E1%BA%A1odi%E1%BB%85nNguy%E1%BB%85nAnhD%C5%A9ng",
+    video: "https://www.youtube.com/embed/6LHv9OFfRa0",
+    author: "Đạo diễn Nguyễn Anh Dũng",
+    submittedDate: "15/05/2019",
+  },
+  {
+    id: "btld",
+    name: "Giới thiệu Đà Lạt xưa và nay | Bảo tàng Lâm Đồng",
+    originLink:
+      "https://www.youtube.com/watch?v=XINPJrIol3k&ab_channel=LeTuanAnh",
+    video: "https://www.youtube.com/embed/XINPJrIol3k",
+    author: "Le Tuan Anh",
+    submittedDate: "02/08/2019",
+  },
+  {
+    id: "btld2",
+    name: "Bảo Tàng Lâm Đồng - TP.Đà Lạt - Tỉnh Lâm Đồng - Việt Nam",
+    originLink:
+      "https://www.youtube.com/watch?v=oLlEH1NkunU&ab_channel=HANANhippho",
+    video: "https://www.youtube.com/embed/oLlEH1NkunU",
+    author: "HANA Nhippho",
+    submittedDate: "24/01/2019",
+  },
+];
