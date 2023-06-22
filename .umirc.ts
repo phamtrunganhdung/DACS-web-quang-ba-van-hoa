@@ -22,6 +22,14 @@ export default {
       path: "/exhibition/details-exhibition",
       component: "exhibition/detailsExhibition",
     },
+    {
+      path: "/sign-in",
+      component: "signInSignUp/signIn",
+    },
+    {
+      path: "/sign-up",
+      component: "signInSignUp/signUp",
+    },
     { path: "/contact", component: "contact" },
   ],
   title: "Web quảng bá văn hóa",

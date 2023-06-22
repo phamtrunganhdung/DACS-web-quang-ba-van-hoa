@@ -27,9 +27,23 @@ export default function Header() {
           />
           <input.header />
           <div className="log-in-log-out-side">
-            <label.md className="log-in-log-out">Đăng Ký</label.md>
+            <label.md
+              className="log-in-log-out"
+              onClick={() => {
+                updatePath("/sign-up");
+              }}
+            >
+              Đăng Ký
+            </label.md>
             <label.xl>|</label.xl>
-            <label.md className="log-in-log-out">Đăng Nhập</label.md>
+            <label.md
+              className="log-in-log-out"
+              onClick={() => {
+                updatePath("/sign-in");
+              }}
+            >
+              Đăng Nhập
+            </label.md>
           </div>
         </div>
         <div className="menu-head">

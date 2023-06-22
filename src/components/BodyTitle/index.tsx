@@ -11,6 +11,18 @@ export interface IRoutes {
 
 export default function BodyTitle({ details = "" }: any) {
   const [path, setPath] = useState<string[]>([]);
+  const signInUpRoute: any = [
+    {
+      path: "/sign-in",
+      name: "Đăng nhập",
+      children: [],
+    },
+    {
+      path: "/sign-up",
+      name: "Đăng ký",
+      children: [],
+    },
+  ];
   useEffect(() => {
     if (!history.location.pathname.includes("/")) return;
     let path = "homepage" + history.location.pathname;
@@ -19,7 +31,7 @@ export default function BodyTitle({ details = "" }: any) {
 
   const handleRenderBodyTitle = (path: string[]) => {
     let grPath: IRoutes[] = [];
-    routes.map((i: any) => {
+    [...routes, ...signInUpRoute].map((i: any) => {
       if (i.children.length > 0) {
         i.children.map((j: any) => {
           let childObj: IRoutes = {
