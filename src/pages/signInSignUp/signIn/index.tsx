@@ -12,7 +12,7 @@ export default function SignIn() {
     <div className="sign-in-container">
       <BodyTitle />
       <div className="sign-in-content">
-        <label.xxl>ĐĂNG KÝ</label.xxl>
+        <label.xxl>ĐĂNG NHẬP</label.xxl>
         <div className="form-sign-in">
           <input.normal placeholder="Tài khoản" />
           <input.normal placeholder="Mật khẩu" />
